@@ -4,6 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Medhal · Fıkıh İlmine Giriş</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
+<link rel="manifest" href="site.webmanifest?v=1">
+<meta name="theme-color" content="#1f5a45">
+<meta name="apple-mobile-web-app-title" content="Medhal · Fıkıh İlmine Giriş">
+<meta name="application-name" content="Medhal · Fıkıh İlmine Giriş">
+<meta name="description" content="İslam Hukukuna Giriş (el-Medhal) dersi için konu anlatımı ve sınav merkezi.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Giray Akademi">
+<meta property="og:title" content="Medhal · Fıkıh İlmine Giriş">
+<meta property="og:description" content="İslam Hukukuna Giriş (el-Medhal) dersi için konu anlatımı ve sınav merkezi.">
+<meta property="og:url" content="https://alpkiraym.github.io/madhal/">
+<meta property="og:image" content="https://alpkiraym.github.io/madhal/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medhal · Fıkıh İlmine Giriş · Giray Akademi">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -273,11 +292,20 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
 .rep-h{display:flex;align-items:baseline;gap:10px}.rep-h .rep{margin-left:auto;flex:none}
 .q-text .rep,.big-q .rep,.tf .rep{margin-left:6px}
 .iv-q .rep,.case-text h4 .rep{margin-left:6px}
+.crumb{display:flex;align-items:center;gap:7px;margin-right:auto;min-width:0}
+.crumb .brand{margin-right:0}
+.crumb .ga{display:grid;text-decoration:none;border-radius:9px}
+.crumb .mark,.crumb .pmark{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;flex:none}
+.crumb .mark{background:#1f5a45;color:#f4c430}
+.crumb .ga:hover .mark{background:#2f7a5f}
+.crumb .csep{color:var(--line);font-size:20px;line-height:1}
+.crumb .pmark{background:#f4ead3;color:#1f5a45;border:1px solid #e6d6ae}
+@media (max-width:560px){.crumb{gap:4px}.crumb .mark,.crumb .pmark{width:32px;height:32px}.crumb .csep{font-size:16px}.crumb .brand > span:last-child{display:none}}
 </style>
 </head>
 <body>
 <header class="top"><div class="top-in">
- <a class="brand" href="#ana"><span class="brand-mark">م</span><span><b>Medhal</b><small>Fıkıh İlmine Giriş</small></span></a>
+ <span class="crumb"><a class="ga" href="https://alpkiraym.github.io/" title="Giray Akademi ana sayfası" aria-label="Giray Akademi ana sayfası"><span class="mark"><svg viewBox="24 22 152 96" width="22" height="14" aria-hidden="true" fill="currentColor"><rect x="45" y="33" width="112" height="12"/><rect x="45" y="33" width="12" height="62"/><rect x="28" y="80" width="29" height="15"/><rect x="145" y="33" width="12" height="62"/><rect x="145" y="80" width="27" height="15"/><rect x="97" y="33" width="13" height="70"/><rect x="77" y="97" width="53" height="15"/></svg></span></a><span class="csep" aria-hidden="true">›</span><a class="brand" href="#ana" title="Medhal ana sayfası"><span class="pmark"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6a2 2 0 0 1 4 0v6"/></svg></span><span><b>Medhal</b><small>Fıkıh İlmine Giriş</small></span></a></span>
  <nav class="nav"><a href="#ana" data-nav="ana">Ana Sayfa</a><a href="#unite-1" data-nav="unite">Konular</a><a href="#sinav" data-nav="sinav">Sınav</a></nav>
  <span id="bldSlot" style="margin-left:auto"></span>
 </div></header>
