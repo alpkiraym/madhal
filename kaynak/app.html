@@ -269,14 +269,21 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
  .tf{grid-template-columns:1fr}
  .timeline{grid-template-columns:repeat(2,1fr)}
 }
+@media (max-width:560px){.top-in{flex-wrap:wrap}#bldSlot:has(.bld-lbtn.has){flex-basis:100%;display:flex;justify-content:flex-end;margin-top:-4px}#bldSlot .bld-lbtn.has{padding:3px 9px!important;font-size:.78rem!important}}
+.rep-h{display:flex;align-items:baseline;gap:10px}.rep-h .rep{margin-left:auto;flex:none}
+.q-text .rep,.big-q .rep,.tf .rep{margin-left:6px}
+.iv-q .rep,.case-text h4 .rep{margin-left:6px}
 </style>
 </head>
 <body>
 <header class="top"><div class="top-in">
  <a class="brand" href="#ana"><span class="brand-mark">م</span><span><b>Medhal</b><small>Fıkıh İlmine Giriş</small></span></a>
  <nav class="nav"><a href="#ana" data-nav="ana">Ana Sayfa</a><a href="#unite-1" data-nav="unite">Konular</a><a href="#sinav" data-nav="sinav">Sınav</a></nav>
+ <span id="bldSlot" style="margin-left:auto"></span>
 </div></header>
 <main class="wrap" id="app"></main>
+<script>window.BLD_APP = 'Medhal'; window.BLD_PREFIX = 'medhal2:'; window.BLD_SLOT = '#bldSlot';</script>
+<!--BILDIR-->
 
 <script>
 /*DATA*/
@@ -297,6 +304,9 @@ function uName(n){const u=UNITS[n-1];return u?u.no+'. '+u.title:''}
 const BANK=[];
 UNITS.forEach(u=>u.quiz.forEach(q=>BANK.push(Object.assign({u:u.no},q))));
 EXTRA_MCQ.forEach(q=>BANK.push(q));
+BANK.forEach((q,i)=>q.id=i);
+[TF,SB,TERMS,INTERVIEW,CASES].forEach(A=>A.forEach((x,i)=>x.id=i));
+const B=(k,yer,bas)=>window.bldButton?window.bldButton(k,yer,bas):'';
 
 function setNav(key){document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===key))}
 
@@ -339,6 +349,7 @@ function unit(n){
   <section class="quiz-box" id="quiz"><h2>Ünite Sonu Testi</h2><p class="muted">Bir seçeneğe tıkladığınızda cevap ve açıklama hemen görünür.</p><div id="qz"></div></section>
   <nav class="pager">${prev?`<a href="#unite-${prev.no}"><small>← Önceki ünite</small>${esc(prev.title)}</a>`:'<span></span>'}${next?`<a class="next" href="#unite-${next.no}"><small>Sonraki ünite →</small>${esc(next.title)}</a>`:`<a class="next" href="#sinav"><small>Bitti →</small>Sınav Merkezi</a>`}</nav>
  </article></div>`;
+ app.querySelectorAll('article > h2').forEach((h,i)=>{h.classList.add('rep-h');h.insertAdjacentHTML('beforeend',B('u:'+u.no+':'+(i+1),'Ünite '+u.no+' · '+u.title,h.textContent))});
  renderUnitQuiz(u);
  window.scrollTo(0,0);
  $('#lt').onclick=()=>{const w=$('#unitwrap'); const o=w.classList.toggle('closed')?false:true; store.set('listOpen',o); $('#lt').setAttribute('aria-expanded',o); $('#ltx').textContent=o?'Ünite listesini gizle':'Ünite listesini göster'; if(o){const on=document.querySelector('#strip a.on'); if(on){const s=$('#strip'); s.scrollLeft=on.offsetLeft-s.offsetLeft-12;}}};
@@ -348,7 +359,7 @@ function unit(n){
 function renderUnitQuiz(u0){
  const u=Object.assign({},u0,{quiz:u0.quiz.map(q=>{const idx=shuffle(q.o.map((_,i)=>i));return Object.assign({},q,{o:idx.map(i=>q.o[i]),a:idx.indexOf(q.a)})})});
  const box=$('#qz'); let answered=0, score=0;
- box.innerHTML=u.quiz.map((q,i)=>`<div class="q" data-i="${i}"><div class="q-text"><span class="qn">${i+1}.</span>${esc(q.q)}</div><div class="opts">${q.o.map((o,j)=>`<button class="opt" data-j="${j}"><span class="l">${L[j]}</span><span>${esc(o)}</span></button>`).join('')}</div></div>`).join('')+`<div class="score-bar" id="sb" style="display:none"></div>`;
+ box.innerHTML=u.quiz.map((q,i)=>`<div class="q" data-i="${i}"><div class="q-text"><span class="qn">${i+1}.</span>${esc(q.q)}${B('uq:'+u.no+':'+(i+1),'Ünite '+u.no+' sonu testi',q.q+' | Doğru cevap: '+q.o[q.a])}</div><div class="opts">${q.o.map((o,j)=>`<button class="opt" data-j="${j}"><span class="l">${L[j]}</span><span>${esc(o)}</span></button>`).join('')}</div></div>`).join('')+`<div class="score-bar" id="sb" style="display:none"></div>`;
  box.querySelectorAll('.q').forEach(qe=>{
   const q=u.quiz[+qe.dataset.i];
   qe.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
@@ -418,7 +429,7 @@ function playTest(qs){
   ex.innerHTML=`<div class="panel"><div class="row" style="justify-content:space-between"><span class="muted">Soru ${i+1} / ${qs.length}</span><span class="muted">Doğru: ${score}</span></div>
   <div class="prog"><i style="width:${(i)/qs.length*100}%"></i></div>
   <span class="unit-tag">${esc(uName(q.u))}</span>
-  <p class="big-q">${esc(q.q)}</p>
+  <p class="big-q">${esc(q.q)}${B('t:'+q.id,'Sınav · Test · '+uName(q.u),q.q+' | Doğru cevap: '+q.o[q.a])}</p>
   <div class="opts">${q.o.map((o,j)=>`<button class="opt" data-j="${j}"><span class="l">${L[j]}</span><span>${esc(o)}</span></button>`).join('')}</div>
   <div id="fb"></div></div>`;
   ex.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
@@ -448,7 +459,7 @@ function modeTF(){
   let sc=0,an=0;
   ex.innerHTML=`<div class="panel"><div class="row" style="justify-content:space-between"><h2>${isSB?'Sahih mi, Batıl mı?':'Doğru – Yanlış'}</h2><div class="seg" id="sub"><button data-s="dy" class="${!isSB?'on':''}">Doğru – Yanlış</button><button data-s="sb" class="${isSB?'on':''}">Sahih – Batıl (2022)</button></div></div>
   <p class="muted">${isSB?'Muallak ve muzâf akit sîgalarını değerlendirin (2022 Medhal sınavı, 5. soru; Ünite 16). Ünite filtresi bu bölümde uygulanmaz.':fltLabel()+' · '+items.length+' yargı'}</p>
-  <div id="tfl">${items.map((x,i)=>`<div class="tf" data-i="${i}"><div>${x.src?'<span class="unit-tag">'+x.src+'</span> ':''}${esc(x.s)}</div><div class="tf-btns"><button data-v="1">${lab[0]}</button><button data-v="0">${lab[1]}</button></div></div>`).join('')||'<p>Bu filtrede yargı yok.</p>'}</div>
+  <div id="tfl">${items.map((x,i)=>`<div class="tf" data-i="${i}"><div>${x.src?'<span class="unit-tag">'+x.src+'</span> ':''}${esc(x.s)}${B((isSB?'sb:':'dy:')+x.id,'Sınav · '+(isSB?'Sahih – Batıl':'Doğru – Yanlış')+(x.u?' · '+uName(x.u):''),x.s+' | Cevap: '+(x.a?lab[0]:lab[1]))}</div><div class="tf-btns"><button data-v="1">${lab[0]}</button><button data-v="0">${lab[1]}</button></div></div>`).join('')||'<p>Bu filtrede yargı yok.</p>'}</div>
   <div class="score-bar" id="tfs" style="display:none"></div></div>`;
   ex.querySelectorAll('#sub button').forEach(b=>b.onclick=()=>{sub=b.dataset.s;store.set('tfsub',sub);draw()});
   ex.querySelectorAll('.tf').forEach(r=>{const x=items[+r.dataset.i];r.querySelectorAll('button').forEach(b=>b.onclick=()=>{
@@ -498,6 +509,7 @@ function modeCards(){
   ex.innerHTML=`<div class="panel"><div class="row" style="justify-content:space-between"><h2>Bilgi Kartları</h2><span class="muted">${d.length?(i+1)+' / '+d.length:'0'} · bilinen: ${deck.filter(t=>known.has(t.t)).length}/${deck.length}</span></div>
   <div class="row" style="margin-top:8px"><label class="muted" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="ou" ${onlyUnknown?'checked':''} style="accent-color:var(--accent)"> Sadece bilmediklerim</label><button class="btn soft" id="sh">Karıştır</button></div>
   ${c?`<div class="fc-stage"><div class="fc" id="fc" tabindex="0" role="button" aria-label="Kartı çevir"><div class="fc-face"><span class="unit-tag">${esc(uName(c.u))}</span><div class="fc-term">${esc(c.t)}</div>${c.ar?`<div class="fc-ar">${c.ar}</div>`:''}<span class="fc-hint">Çevirmek için tıklayın · boşluk tuşu</span></div><div class="fc-face back"><div class="fc-def">${esc(c.d)}</div>${c.ar?`<div class="fc-ar" style="font-size:24px;margin-top:14px">${c.ar}</div>`:''}<span class="fc-hint">${known.has(c.t)?'✓ Biliyorum olarak işaretli':''}</span></div></div></div>
+  <div style="text-align:center;margin-top:8px">${B('k:'+c.id,'Sınav · Bilgi kartı · '+uName(c.u),c.t+': '+c.d)}</div>
   <div class="fc-ctrl"><button class="btn soft" id="pv">← Önceki</button><button class="btn warm" id="no">Tekrar et</button><button class="btn" id="ok">Biliyorum</button><button class="btn soft" id="nx">Sonraki →</button></div>`:'<p style="padding:30px 0;text-align:center">Tüm kartları biliyorsun. 🎉</p>'}</div>`;
   $('#ou').onchange=e=>{onlyUnknown=e.target.checked;i=0;draw()};
   $('#sh').onclick=()=>{deck=shuffle(deck);i=0;draw()};
@@ -527,7 +539,7 @@ function modeInterview(isCase){
   <div class="row" style="justify-content:space-between"><h2>${isCase?'Vaka Analizi':'Mülakat'}</h2><div class="row"><span class="timer" id="tm">${isCase?'05:00':'03:00'}</span><button class="btn soft" id="ts">Süreyi başlat</button></div></div>
   <p class="muted">${fltLabel()} · ${pool.length} ${isCase?'vaka':'soru'} · Cevabınızı sesli verin ya da not alın, sonra cevap anahtarıyla karşılaştırın.</p>
   <span class="unit-tag">${esc(uName(x.u))}${x.src?' · '+x.src+' sınavı':''}</span>
-  ${isCase?`<div class="case-text"><h4>${esc(x.title)}</h4>${esc(x.q)}</div>`:`<p class="iv-q">${esc(x.q)}</p>`}
+  ${isCase?`<div class="case-text"><h4>${esc(x.title)}${B('v:'+x.id,'Sınav · Vaka · '+uName(x.u),x.title+': '+x.q)}</h4>${esc(x.q)}</div>`:`<p class="iv-q">${esc(x.q)}${B('m:'+x.id,'Sınav · Mülakat · '+uName(x.u),x.q)}</p>`}
   <textarea id="ta" placeholder="Cevabınızı veya anahtar noktaları buraya yazabilirsiniz..."></textarea>
   <div class="row" style="margin-top:12px;justify-content:space-between"><button class="btn" id="sk">Cevap anahtarını göster</button><button class="btn ghost" id="nq">${isCase?'Başka vaka':'Rastgele yeni soru'} →</button></div>
   <div id="keys"></div>
