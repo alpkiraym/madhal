@@ -1,4 +1,4 @@
-// İdeal Özet sırasına göre eklenen sınav verileri
+// Ünite sırasına göre eklenen sınav verileri
 TERMS.push(
 {t:'Cahiliye',ar:'الجاهلية',d:'Hz. Peygamber\'den önceki dönem ile o dönemin inanç, kültür, örf ve hukuku.',u:1},
 {t:'Kabile asabiyeti',ar:'العصبية القبلية',d:'Haklı haksız ayırmadan kabileye yardımı gerektiren kan bağı dayanışması.',u:1},
@@ -68,11 +68,11 @@ TERMS.push(
 TF.push(
 {s:'İslam, kasâme uygulamasını cahiliyedeki şekliyle bırakmıştır.',a:true,e:'Kasâme, hul\', şirket, mudârebe olduğu gibi bırakılanlardandır.',u:1},
 {s:'Cahiliye Araplarında mehri evlenen kadın alırdı.',a:false,e:'Mehri veli alırdı; İslam onu kadının hakkı yaptı.',u:1},
-{s:'İdeal Özet\'e göre icma tâbi kaynaklar arasındadır.',a:true,e:'Aslî kaynaklar Kitap ve Sünnet; tâbi kaynaklar kıyas, mesalih-i mürsele, örf, icma.',u:3},
+{s:'İcma tâbi kaynaklar arasında sayılır.',a:true,e:'Aslî kaynaklar Kitap ve Sünnet; tâbi kaynaklar kıyas, mesalih-i mürsele, örf, icma.',u:3},
 {s:'Mütevâtir sünnetin inkârı küfrü gerektirir.',a:true,e:'Kesin bilgi ifade eder, amel farzdır.',u:3},
 {s:'Peygamber asrında fakihler arasında ihtilaf vardı.',a:false,e:'Bu devirdeki içtihat vahiyden müstakil değildi ve ihtilaf yoktu.',u:4},
 {s:'Bedâiu\'s-sanâi\' duraklama devrinde yazılmıştır.',a:true,e:'Kâsânî (587).',u:4},
-{s:'İmam Şâfiî âhâd hadisi mürsel ve kıyasa tercih eder.',a:true,e:'İdeal Özet, s. 10.',u:5},
+{s:'İmam Şâfiî âhâd hadisi mürsel ve kıyasa tercih eder.',a:true,e:'Şâfiî, âhâd hadisi mürsel hadise ve kıyasa tercih etmiştir.',u:5},
 {s:'Ahmed b. Hanbel fıkıh görüşlerini bizzat bir kitapta toplamıştır.',a:false,e:'Yazmayı kerih gördü; öğrencileri derledi.',u:5},
 {s:'Muhtar tarife göre bir damla su mal sayılır.',a:false,e:'Mutad yolla faydalanılamadığı için mal değildir.',u:6},
 {s:'Mislî mallar zimmette deyn olarak sabit olabilir.',a:true,e:'Bu yüzden karz ve selem konusu olurlar.',u:7},
@@ -80,7 +80,7 @@ TF.push(
 {s:'İbâha ile elde edilen yararlanma hakkı başkasına devredilebilir.',a:false,e:'İbâha yalnız yararlanma iznidir.',u:8},
 {s:'Özel havuzda ihraz edilmiş suda kural olarak kimsenin şürb hakkı yoktur.',a:true,e:'Ancak zorlukta yakın çevrede su bulamayanın içme hakkı doğar ve kullandığını tazmin eder.',u:9},
 {s:'Sahipli arazide kendiliğinden yetişen ağaçlar mübah maldır.',a:false,e:'Ağaçlar sahipli arazide nasıl yetişirse yetişsin özel mülktür; otlar farklıdır.',u:10},
-{s:'Varisi olmayan kişinin varisi hazinedir.',a:true,e:'İdeal Özet, s. 20.',u:10},
+{s:'Varisi olmayan kişinin varisi hazinedir.',a:true,e:'Varisi bulunmayanın malı hazineye (beytülmâle) kalır.',u:10},
 {s:'Hanefîlere göre aynı mertebedeki şuf\'adarlar hisseleri oranında paylaşır.',a:false,e:'Hanefîlere göre kişi sayısına göre, cumhura göre hisse oranına göre.',u:11},
 {s:'Hanbelîlere göre icap ve kabulün tek kişide toplanması nikâh dahil her akitte geçerlidir.',a:true,e:'Şâfiî yalnız dedenin torunlarını evlendirmesinde kabul eder.',u:12},
 {s:'Delilik doğrudan hacr sebebidir.',a:true,e:'Yargı kararı aranmaz.',u:13},
@@ -94,7 +94,7 @@ TF.push(
 EXTRA_MCQ.push(
 {u:1,q:'Hz. Peygamber İslam\'dan önce kiminle ortaklık (şirket) yapmıştı?',o:['Ebû Bekir','Sâib b. Ebi\'s-Sâib','Abdullah b. Cüd\'ân','Ebû Talib'],a:1,e:'İslam şirket akdini kabul edip şartlarını belirledi.'},
 {u:3,q:'"Hırsızın eli sağ el ve bilekten kesilir" açıklaması sünnetin hangi işlevidir?',o:['Mücmeli tefsir','Âmmı tahsis','Mutlakı takyid','Nesih'],a:2,e:'Ayette hangi elin nereden kesileceği belirtilmemiştir.'},
-{u:4,q:'İdeal Özet\'e göre 6. evreye ne ad verilir?',o:['Tedvin devri','Metin-şerh-haşiye devri','Müctehitler devri','Tâbiîn asrı'],a:1,e:'Bağdat\'ın düşüşünden günümüze.'},
+{u:4,q:'Fıkıh tarihinin 6. evresine ne ad verilir?',o:['Tedvin devri','Metin-şerh-haşiye devri','Müctehitler devri','Tâbiîn asrı'],a:1,e:'Bağdat\'ın düşüşünden günümüze.'},
 {u:5,q:'İmam Mâlik\'in usulünde kıyastan önce gelen delil hangisidir?',o:['Mesalih-i mürsele','Ehl-i Medine ameli','İstihsan','Sedd-i zerâi'],a:1,e:'Kitap → Sünnet → İcma → Ehl-i Medine → Kıyas → ...'},
 {u:7,q:'Hangisi kınye malına örnektir?',o:['Satış için alınan araba','Binmek için alınan araba','Kiraya verilen ev','Altın'],a:1,e:'Ticaret için değil kendi kullanımı için edinilen mal.'},
 {u:9,q:'Umumi yola bakan akarda çıkma türü yapılar için Ebû Hanîfe\'ye göre ne gerekir?',o:['Hiçbir şey','Komşuların izni','Yetkililerden izin','Bedel ödenmesi'],a:2,e:'Zarar vermemek kaydıyla pencere ve kapı açılabilir.'},
@@ -102,7 +102,7 @@ EXTRA_MCQ.push(
 {u:11,q:'Ebû Yûsuf\'a göre alt mertebedeki şuf\'adarın hakkının sübutu için ne gerekir?',o:['Üst mertebedekinin vazgeçmesi','Üst mertebede kimsenin bulunmaması','Hâkim kararı','Bedelin peşin ödenmesi'],a:1,e:'Mirastaki hacb hükümlerinden hareket eder.'},
 {u:12,q:'Gaipler arasındaki yazışmada akit meclisi neresidir?',o:['Mektubun yazıldığı yer','Mektubun açılıp okunduğu yer','Satıcının evi','Mahkeme'],a:1,e:'Hazırda âkidlerin bulunduğu yer, gaipte mektubun açıldığı yer.'},
 {u:14,q:'Vasisi olan küçüğün malını satan fuzûlîye hâkimin icazeti neden geçersizdir?',o:['Hâkim ehliyetsizdir','İcazet o tasarrufta hakkı olan kişiden (vasiden) gelmelidir','Akit batıldır','Satım mevkuf olamaz'],a:1,e:'İcazetin geçerlilik şartlarından biri.'},
-{u:16,q:'"Talak inşallah sözüne bağlanırsa" Hanefî ve Şâfiîlere göre hüküm nedir?',o:['Geçerli','Geçersiz','Mevkuf','Muzâf'],a:1,e:'İdeal Özet, akdin tasnifleri sayfası.'},
+{u:16,q:'"Talak inşallah sözüne bağlanırsa" Hanefî ve Şâfiîlere göre hüküm nedir?',o:['Geçerli','Geçersiz','Mevkuf','Muzâf'],a:1,e:'Bu iki mezhebe göre \"inşallah\" sözüne bağlanan talak geçersizdir.'},
 {u:18,q:'Had cezalarında af yetkisi hangi suçlarda istisnadır?',o:['Zina ve şürb','Kazf ve sirkat','Ridde ve bağy','Hirâbe'],a:1,e:'Kazf ve sirkat hariç diğer hadlerde mağdurun ve devletin af yetkisi yoktur.'}
 );
 

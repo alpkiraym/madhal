@@ -1,6 +1,6 @@
 // ÜNİTELER 13-18
 UNITS.push({
-id:'u13', no:13, src:'İdeal Özet s. 26-27', title:'Ehliyet ve Ehliyet Arızaları', ar:'الأهلية وعوارضها',
+id:'u13', no:13, title:'Ehliyet ve Ehliyet Arızaları', ar:'الأهلية وعوارضها',
 lead:'Vücub ve eda ehliyetini, insanın doğumdan rüşde kadar geçirdiği evreleri, semâvî ve iktisâbî ehliyet arızalarını (delilik, ateh, uyku, ölüm hastalığı, sefeh, sarhoşluk) öğreneceğiz.',
 html:`
 <h2>1. Ehliyet <span class="ar">الأهلية</span></h2>
@@ -78,7 +78,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u14', no:14, src:'İdeal Özet s. 28-29', title:'Velayet, Vekâlet ve Fuzûlî', ar:'الولاية والوكالة والفضولي',
+id:'u14', no:14, title:'Velayet, Vekâlet ve Fuzûlî', ar:'الولاية والوكالة والفضولي',
 lead:'Velayetin kısımlarını ve sıralamasını, vekâletin rükün, şart, çeşit ve hükümlerini, akdin hükmü ile hukuku ayrımını ve fuzûlînin tasarruflarını öğreneceğiz.',
 html:`
 <h2>1. Velayet <span class="ar">الولاية</span></h2>
@@ -146,7 +146,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u15', no:15, src:'İdeal Özet s. 29-30', title:'Akdin Ayıpları ve İkrah', ar:'عيوب العقد والإكراه',
+id:'u15', no:15, title:'Akdin Ayıpları ve İkrah', ar:'عيوب العقد والإكراه',
 lead:'Rızayı sakatlayan galat, gabn, tağrir ve ikrahı; bunların akitlere etkisini ve ikrahın fiillere, ikrarlara ve tasarruflara etkisini öğreneceğiz.',
 html:`
 <p>Akdin in'ikadı sırasında akde ilişen ve iradeyi sakatlayan kusurlar akdin sonucunu etkiler. Bunun temel nedeni İslam hukukunda sözleşmelerde <b>rıza ilkesinin ağırlığı</b>dır. Akdin ayıpları aslında iç ve dış irade uyuşmazlığı konusunu ilgilendirir.</p>
@@ -194,7 +194,7 @@ html:`
 <tr><th>Tasarruf</th><th>Hüküm</th></tr>
 <tr><td><b>Mükrehin ikrarları</b></td><td>Her iki türünde de ikrah altında yapılan ikrarlar <b>geçersizdir</b>; çünkü ikrah yanlış olma ihtimalini öne çıkarır.</td></tr>
 <tr><td><b>Feshe kabil olmayıp hezlden etkilenmeyen sözlü tasarruflar</b></td><td><b>Hanefîlere göre</b> talak, nikâh, ıtak, ric'at, yemin, nezir, zıhâr, îlâ (îlâdan rücû, muhâlaa, kısastan af) gibi tasarruflar her iki türde de ikrahtan etkilenmez, geçerlidir; Şâri bu işlemlerde lafzı yeterli görmüştür. <b>Cumhura göre</b> geçersizdir.</td></tr>
-<tr><td><b>Feshe kabil olan tasarruflar</b> (satım, icâre, hibe)</td><td><b>Hanefîler:</b> Gayr-ı mülcî ise tüm tasarruflar geçerlidir (İdeal Özet); mülcî ise Ebû Hanîfe'ye göre hezlden etkilenen satımlar <b>fasit</b> doğar, Züfer'e göre <b>mevkuf</b>tur; ikrahtan sonraki icazet akdi baştan sahih kılar. <b>Cumhur:</b> Mülcî veya gayr-ı mülcî, feshe kabil olsun olmasın tüm ikrah çeşitlerinde tüm tasarruflar geçersizdir.</td></tr>
+<tr><td><b>Feshe kabil olan tasarruflar</b> (satım, icâre, hibe)</td><td><b>Hanefîler:</b> Gayr-ı mülcî ise tüm tasarruflar geçerlidir; mülcî ise Ebû Hanîfe'ye göre hezlden etkilenen satımlar <b>fasit</b> doğar, Züfer'e göre <b>mevkuf</b>tur; ikrahtan sonraki icazet akdi baştan sahih kılar. <b>Cumhur:</b> Mülcî veya gayr-ı mülcî, feshe kabil olsun olmasın tüm ikrah çeşitlerinde tüm tasarruflar geçersizdir.</td></tr>
 </table>
 <p class="muted">Not: Fasit satımda Şâriin hakkı, ikrahta ise kul hakkı ihlal edilmiştir; icazetten önce itlaf veya geri dönülmez bir tasarrufa konu olursa kıymet lazım gelir.</p>
 
@@ -211,7 +211,7 @@ html:`
 <tr><th>Ridde</th><td>Kâfir olmaz, beynûnet (eşinden ayrılık) oluşmaz.</td></tr>
 <tr><th>İman</th><td>Müslüman olur; fakat irtidat ederse had uygulanmaz (imanın sübutunda şüphe).</td></tr>
 </table>
-<p class="muted">İdeal Özet'te "ikisine de yok" görüşü Ebû Hanîfe'ye nispet edilmiştir; ancak Ebû Hanîfe Tarafeyn içinde mükrihe kısas görüşündedir. Bu görüş Ebû Yûsuf'a aittir (81 sayfalık özet de böyle nakleder).</p>
+<p class="muted">Bazı özetlerde "ikisine de yok" görüşü Ebû Hanîfe'ye nispet edilir; ancak Ebû Hanîfe Tarafeyn içinde mükrihe kısas görüşündedir. Bu görüş Ebû Yûsuf'a aittir (81 sayfalık özet de böyle nakleder).</p>
 `,
 quiz:[
 {q:'Sergideki bakır yüzüğü altın sanıp hiçbir şey söylemeden alan kişinin akdi hakkında hüküm nedir?',o:['Batıl','Mevkuf','Sahih; bâtınî galatın etkisi yoktur','Fasit'],a:2,e:'İttifakla akde olumsuz etkisi yoktur.'},
@@ -225,7 +225,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u16', no:16, src:'İdeal Özet s. 30-31', title:'Akdin Tasnifleri', ar:'أقسام العقود',
+id:'u16', no:16, title:'Akdin Tasnifleri', ar:'أقسام العقود',
 lead:'Akitleri hükmü, aynın teslimi, bedel, sîga ile hükmün ilişkisi, sonuçlarının doğma zamanı ve diğer ölçütlere göre sınıflandıracak; muallak ve muzâf akitlerle şart nazariyesini öğreneceğiz.',
 html:`
 <h2>1. Hükmü Bakımından Akitler</h2>
@@ -310,7 +310,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u17', no:17, src:'İdeal Özet s. 32', title:'Muhayyerlikler', ar:'الخيارات',
+id:'u17', no:17, title:'Muhayyerlikler', ar:'الخيارات',
 lead:'Şart, tayin, görme ve ayıp muhayyerliklerinin tanımlarını, delillerini, şartlarını, akde etkilerini ve sona erme sebeplerini; ayrıca akdin sona erme yollarını öğreneceğiz.',
 html:`
 <p><b>Muhayyerlik:</b> Lehine muhayyerlik sabit olan tarafın, diğer tarafın rızasına bakmaksızın akdi feshedebilme yetkisi. Kaynağı bakımından:</p>
@@ -326,11 +326,11 @@ html:`
 <table class="t"><tr><th colspan="2">Şart muhayyerliği türleri</th></tr>
 <tr><td><b>Akdi fasit kılan şartlar</b></td><td>(1) Sürenin mutlak bırakılması, (2) ebedî olması, (3) belirsiz bir şarta bağlanması ("rüzgârın esmesine kadar"). Üç gün dolmadan düzeltilirse akit sahih olur.</td></tr>
 <tr><td><b>Sahih kabul edilenler: süresi belli olanlar</b></td><td><b>Ebû Hanîfe, Züfer, Şâfiî:</b> en çok 3 gün. <b>İmameyn, Hanbelî, Mecelle:</b> ihtiyaca bağlı muayyen süre. <b>Mâlik:</b> mebîin durumuna bağlı muayyen süre.</td></tr></table>
-<p><b>Sona ermesi:</b> (1) Sarahaten veya delaleten icazet ya da fesih; (2) mebî müşteri elindeyken ayıplı hale gelmesi veya helaki; (3) sürenin sona ermesi; (4) muhayyer tarafın vefatı (Hanefî ve Hanbelîlerde miras kalmaz; Şâfiî, Mâlikî ve Ca'ferîlere göre varise geçer). Faruk Yıldız notunda ayrıca: mebîde kabzdan sonra bitişik veya ayrı artış.</p>
+<p><b>Sona ermesi:</b> (1) Sarahaten veya delaleten icazet ya da fesih; (2) mebî müşteri elindeyken ayıplı hale gelmesi veya helaki; (3) sürenin sona ermesi; (4) muhayyer tarafın vefatı (Hanefî ve Hanbelîlerde miras kalmaz; Şâfiî, Mâlikî ve Ca'ferîlere göre varise geçer). Ayrıca: mebîde kabzdan sonra bitişik veya ayrı artış.</p>
 
 <h2>2. Tayin Muhayyerliği <span class="ar">خيار التعيين</span></h2>
 <div class="box key">Satım akdinde ve bedelli hibe gibi aynın temlikini ifade eden bedelli işlemlerde, bedelleri ve sıfatları malum en fazla üç mebîden birini seçme hakkı.</div>
-<ul><li>İdeal Özet'e göre Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer'e göre mebîdeki bilinmezlik sebebiyle caiz değildir.</li><li><b>İttifakla mirasa konu olur</b> (mülkiyetin ayrıştırılması zorunluluğu).</li><li>Ebû Hanîfe'ye göre 3 gün, İmameyn'e göre muayyen olması yeterlidir.</li></ul>
+<ul><li>Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer'e göre mebîdeki bilinmezlik sebebiyle caiz değildir.</li><li><b>İttifakla mirasa konu olur</b> (mülkiyetin ayrıştırılması zorunluluğu).</li><li>Ebû Hanîfe'ye göre 3 gün, İmameyn'e göre muayyen olması yeterlidir.</li></ul>
 <div class="grid2"><div class="card-s"><h4>Sıhhat şartları</h4><ol><li>En fazla üç şey arasında olacak.</li><li>Birbirinden farklı olacak.</li><li>Fiyatları ve sıfatları malum olacak.</li><li>Süresi belli olacak.</li></ol></div><div class="card-s"><h4>Sona erdiren sebepler</h4><ol><li>Doğrudan veya dolaylı olarak tercih.</li><li>Müşterinin kabzından sonra birinin helaki (helak olan mahal olarak belirlenir).</li><li>Kabzdan sonra birinin ayıplanması.</li></ol></div></div>
 
 <h2>3. Görme (Ru'yet) Muhayyerliği <span class="ar">خيار الرؤية</span></h2>
@@ -358,7 +358,7 @@ html:`
 `,
 quiz:[
 {q:'Şart muhayyerliğinin delillerinden biri hangisidir?',o:['Urve el-Bârikî hadisi','Habbân b. Münkız hadisi','Muâz hadisi','Hilfü\'l-fudûl'],a:1,e:'Enes b. Malik hadisi ve İbn Ömer rivayeti de delildir.'},
-{q:'Mecelle şart muhayyerliğinin süresinde kimin görüşünü benimsemiştir?',o:['Ebû Hanîfe (3 gün)','İmameyn ve Hanbelî (ihtiyaca bağlı muayyen süre)','Mâlik','Şâfiî'],a:1,e:'İdeal Özet: İmameyn-Hanbelî-Mecelle.'},
+{q:'Mecelle şart muhayyerliğinin süresinde kimin görüşünü benimsemiştir?',o:['Ebû Hanîfe (3 gün)','İmameyn ve Hanbelî (ihtiyaca bağlı muayyen süre)','Mâlik','Şâfiî'],a:1,e:'Mecelle bu konuda İmameyn ve Hanbelîlerin görüşünü benimsemiştir.'},
 {q:'Hangisi akdi fasit kılan şart muhayyerliğidir?',o:['Üç günlük muhayyerlik','Rüzgârın esmesine kadar muhayyerlik','İki günlük muhayyerlik','Bir haftalık muhayyerlik (İmameyn\'e göre)'],a:1,e:'Süre mutlak, ebedî veya belirsiz bırakılırsa akit fasit olur.'},
 {q:'İttifakla mirasa konu olan muhayyerlik hangisidir?',o:['Şart','Görme','Tayin','Meclis'],a:2,e:'Ayıp muhayyerliği de ittifakla miras kalır.'},
 {q:'Görme muhayyerliğini kabul etmeyen imam kimdir?',o:['Ebû Hanîfe','İmam Mâlik','İmam Şâfiî','Ahmed b. Hanbel'],a:2,e:'Görülmeyen malın satışını caiz görmez.'},
@@ -368,7 +368,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u18', no:18, src:'İdeal Özet s. 33-34', title:'Ceza Nazariyesi', ar:'نظرية العقوبة',
+id:'u18', no:18, title:'Ceza Nazariyesi', ar:'نظرية العقوبة',
 lead:'Suç ve ceza kavramlarını, cezanın amacı ve temel ilkelerini, kısas ve diyet, had, devlet aleyhine işlenen suçlar ve ta\'zîr cezalarını öğreneceğiz.',
 html:`
 <h2>1. Suç ve Ceza</h2>
@@ -422,7 +422,7 @@ html:`
 <tr><td><b>Zinâ</b></td><td>Suç beyyine ve ikrar ile sabit olur. Mükellef ve baliğ kişilerin önden birleşmesi gerekir. 4 erkek, 4 ayrı mecliste (aynı mecliste) şahitlik eder; şahitler fiili açık seçik görmüş olmalıdır.</td></tr>
 <tr><td><b>Kazf</b> <span class="ar">القذف</span></td><td>Yabancı kadına zina iftirası 80 celde; karısına yaparsa liân. Dava açmak şarttır; sonrasında af geçerli değildir. İspat edemezse bir daha şahitliği geçerli değildir.</td></tr>
 <tr><td><b>Şürb</b></td><td>Cumhur 80 celdenin hepsini, Şâfiî 40 tanesini had sayar. Hamr dışındaki içkilerin haddine <b>hadd-i iskâr</b> denir; hamr dışındaki içkilerde had sarhoş olana uygulanır. İçki haddi uygulanmayanlar: (1) zımmî, (2) irtidat öncesi içki içip sonra İslam'a giren, (3) çocuk, deli, mükreh, susuz kişiler.</td></tr>
-<tr><td><b>Sirkat</b> (hırsızlık)</td><td>Nisap miktarı (İdeal Özet: 4,8 gr altın veya karşılığı) mütekavvim bir malı gizlice mahfuz yerden almak ile suç sabit olur. Dava açmış olma şartı vardır; sonrasında af geçerli değildir. El bilekten kesilir. Nisap Hanefîlere göre 10 dirhem (1 dinar), cumhura göre çeyrek dinar.</td></tr>
+<tr><td><b>Sirkat</b> (hırsızlık)</td><td>Nisap miktarı (4,8 gr altın veya karşılığı) mütekavvim bir malı gizlice mahfuz yerden almak ile suç sabit olur. Dava açmış olma şartı vardır; sonrasında af geçerli değildir. El bilekten kesilir. Nisap Hanefîlere göre 10 dirhem (1 dinar), cumhura göre çeyrek dinar.</td></tr>
 </table>
 
 <h2>4. Devlet Aleyhine İşlenen Suçlar</h2>
@@ -438,7 +438,7 @@ html:`
 `,
 quiz:[
 {q:'Bir şeyin suç olmasının şartlarından biri değildir?',o:['Kanunilik','Maddî unsur','Hukuka aykırılık','Mağdurun şikâyeti'],a:3,e:'Dört unsur: kanunilik, maddî, hukuka aykırılık, manevî.'},
-{q:'İdeal Özet\'e göre zina ve sirkatte zamanaşımı Ebû Hanîfe\'ye göre ne kadardır?',o:['1 ay','6 ay','1 yıl','Zamanaşımı yoktur'],a:2,e:'İmameyn 1 ay der; cumhur zamanaşımını kabul etmez.'},
+{q:'Zina ve sirkatte zamanaşımı Ebû Hanîfe\'ye göre ne kadardır?',o:['1 ay','6 ay','1 yıl','Zamanaşımı yoktur'],a:2,e:'İmameyn 1 ay der; cumhur zamanaşımını kabul etmez.'},
 {q:'Ebû Hanîfe\'ye göre amd hangisidir?',o:['Sopa ile öldürme','Bıçak, tabanca gibi bizzat öldürme aleti ile öldürme','Suda boğma','Zehirleme'],a:1,e:'İmameyn büyük taş, boğma, zehirlemeyi de amd sayar.'},
 {q:'Trafik kazası hangi öldürme türüne örnektir ve sonucu nedir?',o:['Hata – kefaret','Tesebbüb – âkileye diyet, kefaret yok','Şibh-i amd – diyet-i muğallaza','Amd – kısas'],a:1,e:'Tesebbübde kefaret ve günah yoktur.'},
 {q:'Kasten organ kesmede kaç organda kısas vardır?',o:['5','7','10','Hepsinde'],a:1,e:'El, ayak, burun, kulak, göz, diş, baş.'},

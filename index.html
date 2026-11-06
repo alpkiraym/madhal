@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Medhal · Fıkıh İlmine Giriş</title>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1">
@@ -301,6 +301,10 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
 .crumb .csep{color:var(--line);font-size:20px;line-height:1}
 .crumb .pmark{background:#f4ead3;color:#1f5a45;border:1px solid #e6d6ae}
 @media (max-width:560px){.crumb{gap:4px}.crumb .mark,.crumb .pmark{width:32px;height:32px}.crumb .csep{font-size:16px}.crumb .brand > span:last-child{display:none}}
+.sig{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:5px 12px calc(5px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.7rem;letter-spacing:.02em;color:var(--muted)}
+.sig b{color:#1f5a45;font-weight:600}
+.sig i{font-style:normal;opacity:.5}
+body{padding-bottom:34px} /* şerit son satırı kapatmasın */
 </style>
 </head>
 <body>
@@ -310,6 +314,7 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
  <span id="bldSlot" style="margin-left:auto"></span>
 </div></header>
 <main class="wrap" id="app"></main>
+<div class="sig"><span>© 2026 Her hakkı saklıdır</span><i>·</i><span>Designed by: <b>M.ALPKİRAY</b></span></div>
 <script>window.BLD_APP = 'Medhal'; window.BLD_PREFIX = 'medhal2:'; window.BLD_SLOT = '#bldSlot';</script>
 <!-- ===== BİLDİR (hata bildirimi) · Giray Akademi ortak parçası ===== -->
 <style>
@@ -431,11 +436,11 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
 
 
 <script>
-// ÜNİTELER 1-6 (İdeal Medhal Özeti sırası)
+// ÜNİTELER 1-6
 const UNITS = [];
 
 UNITS.push({
-id:'u1', no:1, src:'İdeal Özet s. 2', title:'İslam\'dan Önce Araplar', ar:'حالة العرب قبل الإسلام',
+id:'u1', no:1, title:'İslam\'dan Önce Araplar', ar:'حالة العرب قبل الإسلام',
 lead:'İslam şeriatının geldiği toplumun sosyal ve hukuki yapısını, İslam\'ın bu yapıdaki kuralları nasıl kaldırdığını, düzelttiğini veya olduğu gibi bıraktığını öğreneceğiz.',
 html:`
 <h2>1. Coğrafi ve Siyasi Durum</h2>
@@ -527,7 +532,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u2', no:2, src:'İdeal Özet s. 3-4', title:'Şeriat, Fıkıh ve Kanun', ar:'الشريعة والفقه والقانون',
+id:'u2', no:2, title:'Şeriat, Fıkıh ve Kanun', ar:'الشريعة والفقه والقانون',
 lead:'Din, şeriat, fıkıh ve kanun kavramlarını, fıkıh teriminin geçirdiği üç aşamayı, şeriat ile fıkıh arasındaki ilişkiyi ve İslam fıkhının özelliklerini öğreneceğiz.',
 html:`
 <h2>1. Dört Temel Kavram</h2>
@@ -634,14 +639,14 @@ quiz:[
 {q:'Fıkhın muhtar tanımına göre hangisi fıkıh sayılmaz?',o:['Müctehidin hükmü delilinden bilmesi','Mukallidin bir hükmü müftüden öğrenmesi','Kıyasla yeni bir meselenin hükmünü çıkarmak','Ayetten zinanın haramlığını istinbat etmek'],a:1,e:'"İstidlal yoluyla" kaydı mukallidin bilgisini dışarıda bırakır.'},
 {q:'Fıkıh kavramının birinci aşamasında fıkıh ile şeriat arasındaki ilişki nedir?',o:['Şeriat daha geniştir','Fıkıh daha geniştir; içtihadî hükümleri de kapsar','Aynıdır','Hiç kesişmezler'],a:1,e:'İlk aşamada her türlü hüküm bilgisi fıkıhtır; içtihadî hükümler şeriata dahil değilken fıkha dahildir.'},
 {q:'Aşağıdakilerden hangisi vaz\'î hükümdür?',o:['Nedb','Kerâhet','Butlan','İbâha'],a:2,e:'Sıhhat ve butlan vaz\'î, diğerleri teklîfî hükümdür.'},
-{q:'"Fıkıh şeriata dayanır ama icma ve kıyas gibi kaynaklar ancak Kitap ve Sünnet onları meşru saydığı için geçerlidir" ifadesi hangi ilişkiyi anlatır?',o:['Genellik-özellik','Kaynaklık','İlahîlik-beşerîlik','Mürûnet'],a:1,e:'Faruk Yıldız notlarındaki üçlü ayrım: genellik-özellik, kaynaklık, ilahîlik-beşerîlik.'},
+{q:'"Fıkıh şeriata dayanır ama icma ve kıyas gibi kaynaklar ancak Kitap ve Sünnet onları meşru saydığı için geçerlidir" ifadesi hangi ilişkiyi anlatır?',o:['Genellik-özellik','Kaynaklık','İlahîlik-beşerîlik','Mürûnet'],a:1,e:'Üçlü ayrım: genellik-özellik, kaynaklık, ilahîlik-beşerîlik.'},
 {q:'Roma hukuku iddiasına verilen cevaplardan biri hangisidir?',o:['Beyrut hukuk okulu fetih sırasında en parlak dönemindeydi','Fakihler Roma\'dan alsalardı genel sözleşmeler ve borçlar teorisini de alırlardı','İslam\'da evlat edinme Roma\'dan alınmıştır','Şuf\'a Roma hukukundan alınmıştır'],a:1,e:'Ayrıca şuf\'a ve vakfın Roma\'da karşılığı yoktur; Beyrut okulu fetihten önce yıkılmıştı.'},
 {q:'Hangisi İslam şeriatının evrenselliğinin delillerinden biri değildir?',o:['Maslahatı celb, mefsedeti def','Hükümlerin umumi ve kalıcı olması','Mürûnet','Kanunların parlamento tarafından değiştirilebilmesi'],a:3,e:'Beşerî hukukun özelliğidir.'},
 {q:'Mecelle\'ye göre fıkıh nedir?',o:['Kişinin lehine ve aleyhine olanı bilmesi','Mesâil-i şer\'iyye-i ameliyyeyi bilmek','Mükelleflerin bütün fiillerini bilmek','Usul kaidelerini bilmek'],a:1,e:'Ebû Hanîfe ve Şâfiî tanımlarıyla birlikte üç meşhur tanımdan biri.'}
 ]});
 
 UNITS.push({
-id:'u3', no:3, src:'İdeal Özet s. 5', title:'Şer\'î Deliller ve Önceki Şeriatler', ar:'الأدلة الشرعية والشرائع السابقة',
+id:'u3', no:3, title:'Şer\'î Deliller ve Önceki Şeriatler', ar:'الأدلة الشرعية والشرائع السابقة',
 lead:'Şer\'î hükümlerin delillerini (Kitap, Sünnet, İcma, Kıyas ve diğerleri) ve İslam şeriatının önceki semavi şeriatlerle ilişkisini öğreneceğiz.',
 html:`
 <h2>1. Delillerin Tasnifi</h2>
@@ -731,17 +736,17 @@ html:`
 <p class="muted">Kendisiyle çelişen konularda İslam şeriatı öncekileri nesheder; çelişmeyenlerde devamlılık esastır. Bu, yalnız Kur'an ve Sünnet'te nakledilen önceki hükümler için geçerlidir; çünkü mevcut diğer kitaplar orijinal metin değildir.</p>
 `,
 quiz:[
-{q:'İdeal Özet\'e göre aslî kaynaklar hangileridir?',o:['Kitap ve Sünnet','Kitap, Sünnet, İcma','Kitap, Sünnet, İcma, Kıyas','Kitap ve İcma'],a:0,e:'İcma ve kıyas tâbi kaynaklar arasında sayılmıştır.'},
+{q:'Aslî kaynaklar hangileridir?',o:['Kitap ve Sünnet','Kitap, Sünnet, İcma','Kitap, Sünnet, İcma, Kıyas','Kitap ve İcma'],a:0,e:'İcma ve kıyas tâbi kaynaklar arasında sayılmıştır.'},
 {q:'"Boşanmış kadınlar üç kurû\' beklerler" ayetinin delâleti nasıldır?',o:['Kat\'î','Zannî','Mütevâtir','Meşhur'],a:1,e:'"Kurû\'" hem hayız hem temizlik anlamına gelebilir.'},
 {q:'Hanefîlere göre meşhur sünnetin hükmü nedir?',o:['Kesin bilgi, inkârı küfür','Kesine yakın bilgi','Zan','Hükmü yok'],a:1,e:'Mütevâtir kesin bilgi, meşhur kesine yakın bilgi, âhâd zan ifade eder.'},
 {q:'"Varise vasiyet yoktur" hadisi sünnetin Kur\'an\'a göre hangi konumuna örnektir?',o:['Teyit','Tahsis','Nesh','Mücmelin tefsiri'],a:2,e:'Bakara 180\'deki akrabaya vasiyet emrini neshetmiştir.'},
-{q:'Sükûtî icmayı kabul etmeyen mezhepler hangileridir?',o:['Hanefî ve Hanbelî','Şâfiî ve Mâlikî','Hanefî ve Mâlikî','Hanbelî ve Zâhirî'],a:1,e:'Faruk Yıldız usul notları.'},
+{q:'Sükûtî icmayı kabul etmeyen mezhepler hangileridir?',o:['Hanefî ve Hanbelî','Şâfiî ve Mâlikî','Hanefî ve Mâlikî','Hanbelî ve Zâhirî'],a:1,e:'Sükûtî icmayı Şâfiî ve Mâlikîler kabul etmez.'},
 {q:'Kıyasın rükünleri hangi şıkta doğru verilmiştir?',o:['Asıl, fer\', aslın hükmü, illet','Nas, icma, illet, sebep','Asıl, fer\', şart, mâni','Lafız, mana, illet, hüküm'],a:0,e:'Şarap (asıl), diğer içkiler (fer\'), haramlık (hüküm), sarhoş edicilik (illet).'},
-{q:'Cumhura göre önceki şeriatlerden Kur\'an\'da ikrar veya inkâr edilmeden aktarılan hükümlerin durumu nedir?',o:['Bizim için bağlayıcıdır','Bizim için teşri sayılmaz','İcma ile bağlayıcı olur','Mekruhtur'],a:1,e:'İdeal Özet: "Geçmiş şeriatler bizim için bir kanun değildir."'}
+{q:'Cumhura göre önceki şeriatlerden Kur\'an\'da ikrar veya inkâr edilmeden aktarılan hükümlerin durumu nedir?',o:['Bizim için bağlayıcıdır','Bizim için teşri sayılmaz','İcma ile bağlayıcı olur','Mekruhtur'],a:1,e:'Geçmiş şeriatler bizim için bir kanun değildir.'}
 ]});
 
 UNITS.push({
-id:'u4', no:4, src:'İdeal Özet s. 6-8', title:'Fıkhın Evreleri', ar:'أدوار الفقه الإسلامي',
+id:'u4', no:4, title:'Fıkhın Evreleri', ar:'أدوار الفقه الإسلامي',
 lead:'Hz. Peygamber döneminden günümüze fıkhın geçirdiği altı evreyi; her evrenin kaynaklarını, içtihat anlayışını, tedvin durumunu ve öne çıkan eserlerini öğreneceğiz.',
 html:`
 <div class="timeline">
@@ -752,7 +757,7 @@ html:`
 <div><b>5</b><span>Duraklama<br><small>h.350-656</small></span></div>
 <div><b>6</b><span>Metin-Şerh-Haşiye<br><small>h.656-…</small></span></div>
 </div>
-<p class="muted">İdeal Özet'te 4. evre "h.120-350", 5. evre "h.350-606" olarak yazılmıştır. Abbasîlerin kuruluşu 132, Bağdat'ın Moğollarca düşüşü 656/1258'dir.</p>
+<p class="muted">Bazı özetlerde 4. evre "h.120-350", 5. evre "h.350-606" olarak verilir. Abbasîlerin kuruluşu 132, Bağdat'ın Moğollarca düşüşü 656/1258'dir.</p>
 
 <h2>1. Evre: Peygamber Asrı (fıkhın doğuşu)</h2>
 <p>Bu devirde fıkıh yalnız <b>vahiy</b>dir; fıkhın esasları ve kaynakları bu dönemde oluştu. Mekke'de vahiy ağırlıkla akide ve ahlakı (külli ve icmali hükümler: adam öldürme, kız çocuklarını gömme, yetim malı yeme yasağı, iffet, emanet, ahde vefa, suçun şahsîliği), Medine'de amelî hükümleri (zekât, fitre oranları, cezalar gibi nesnel düzenlemeler) içerir.</p>
@@ -846,18 +851,18 @@ html:`
 <p>Mecelle ile başlayan süreçte ansiklopedik ve monografik çalışmalar, akademik tezler, makâsıd eksenli nazariyeler ve kurumsal iftâ kurulları (Din İşleri Yüksek Kurulu, İslam Fıkıh Akademisi) ortaya çıktı.</p>
 `,
 quiz:[
-{q:'Peygamber asrında içtihat için hangisi doğrudur?',o:['Müstakil bir kaynaktı','Vahiyden ayrı, müstakil değildi; ihtilaf yoktu','Sahabe içtihadı onaysız bağlayıcıydı','Kıyas yasaklanmıştı'],a:1,e:'İdeal Özet notu: Bu devirdeki içtihat vahiyden ayrı, müstakil değildi; ihtilaf yoktu.'},
-{q:'İdeal Özet\'te sayılan nesh örneklerinden biri değildir?',o:['Ölüm iddeti','Kabir ziyareti','Kıblenin değişimi','Müellefe-i kulûbun payı'],a:3,e:'Müellefe-i kulûb meselesi Râşid halifeler döneminde illet zail olduğu için hükmün durdurulmasıdır, nesh değildir.'},
+{q:'Peygamber asrında içtihat için hangisi doğrudur?',o:['Müstakil bir kaynaktı','Vahiyden ayrı, müstakil değildi; ihtilaf yoktu','Sahabe içtihadı onaysız bağlayıcıydı','Kıyas yasaklanmıştı'],a:1,e:'Bu devirdeki içtihat vahiyden ayrı, müstakil değildi; ihtilaf yoktu.'},
+{q:'Hangisi nesh örneklerinden biri değildir?',o:['Ölüm iddeti','Kabir ziyareti','Kıblenin değişimi','Müellefe-i kulûbun payı'],a:3,e:'Müellefe-i kulûb meselesi Râşid halifeler döneminde illet zail olduğu için hükmün durdurulmasıdır, nesh değildir.'},
 {q:'Râşid halifeler döneminde hükümler hangi sırayla incelenirdi?',o:['Re\'y, Sünnet, Kitap','Kitap, Sünnet, re\'y','Kitap, icma, kıyas','Sünnet, Kitap, şûra'],a:1,e:'Bulamazlarsa ileri gelenlerle istişare ederlerdi.'},
 {q:'Tâbiîn asrında ihtilafın sebeplerinden biri değildir?',o:['Fakihlerin farklı beldelere dağılması','Şûra ile içtihadın imkânsızlaşması','Farklı örfler','Mezheplerin vakıflarla desteklenmesi'],a:3,e:'Vakıf tahsisi duraklama devrinin taklit sebeplerindendir.'},
 {q:'Bedâiu\'s-sanâi\' kime aittir ve hangi devirde yazılmıştır?',o:['Serahsî – tedvin','Kâsânî – duraklama devri','Nevevî – metin-şerh-haşiye','Merğînânî – tâbiîn'],a:1,e:'Kâsânî (587).'},
 {q:'"Haşiyeyi açıklayan eser"e ne denir?',o:['Şerh','Zeyl','Ta\'lîk ve takrîr','Muhtasar'],a:2,e:'Şerh ibareyi açar, haşiye dışarıdan kaviller getirir, zeyl ektir.'},
-{q:'Duraklama devri âlimlerinin yaptığı faydalı işlerden biri değildir?',o:['Hükümleri illetlendirme','Fürûdan kaide çıkarma','Görüşler arasında tercih','Yeni bir mezhep kurma'],a:3,e:'İdeal Özet\'te sayılan dört iş: ta\'lîl, kaide çıkarma, tercih, mezhebi genişletme.'},
+{q:'Duraklama devri âlimlerinin yaptığı faydalı işlerden biri değildir?',o:['Hükümleri illetlendirme','Fürûdan kaide çıkarma','Görüşler arasında tercih','Yeni bir mezhep kurma'],a:3,e:'Bu devrin dört faydalı işi: ta\'lîl, kaide çıkarma, tercih, mezhebi genişletme.'},
 {q:'Mürşidü\'l-hayrân için hangisi doğrudur?',o:['Osmanlı\'da yürürlüğe girdi','Mısır\'da Kadri Paşa\'nın hazırladığı, yürürlüğe girmeyen Hanefî kodifikasyonudur','Dört mezhebe dayanır','Ceza kanunudur'],a:1,e:'1875, 941 madde.'}
 ]});
 
 UNITS.push({
-id:'u5', no:5, src:'İdeal Özet s. 9-10', title:'Yaşayan Ehl-i Sünnet Mezhepleri', ar:'المذاهب السنية الباقية',
+id:'u5', no:5, title:'Yaşayan Ehl-i Sünnet Mezhepleri', ar:'المذاهب السنية الباقية',
 lead:'Dört Sünnî mezhebin imamlarını, kaynak sıralarını, hocalarını, talebelerini ve tedvin süreçlerini; ayrıca Zeydiyye, Ca\'feriyye ve silinen mezhepleri tanıyacağız.',
 html:`
 <div class="mezhep">
@@ -943,7 +948,7 @@ html:`
 </table>
 `,
 quiz:[
-{q:'İdeal Özet\'e göre Ebû Hanîfe\'nin kaynak sırası hangisidir?',o:['Kitap → Sünnet → İcma → Kıyas','Kitap → Sünnet → Sahabe kavli → İçtihat','Kitap → Sünnet → Medine ameli → Kıyas','Kitap → Sahabe → Sünnet → Kıyas'],a:1,e:'İçtihat hem kıyası hem istihsanı kapsar.'},
+{q:'Ebû Hanîfe\'nin kaynak sırası hangisidir?',o:['Kitap → Sünnet → İcma → Kıyas','Kitap → Sünnet → Sahabe kavli → İçtihat','Kitap → Sünnet → Medine ameli → Kıyas','Kitap → Sahabe → Sünnet → Kıyas'],a:1,e:'İçtihat hem kıyası hem istihsanı kapsar.'},
 {q:'Mezhebi "şûra ile işleyen kolektif bir mezhep" olarak nitelenen imam kimdir?',o:['İmam Mâlik','Ebû Hanîfe','İmam Şâfiî','Ahmed b. Hanbel'],a:1,e:'Malik ise talebeleriyle münakaşa etmez, imlâ ettirirdi.'},
 {q:'Medine halkının uygulamasını haber-i âhâda tercih eden imam kimdir?',o:['Ebû Hanîfe','İmam Mâlik','İmam Şâfiî','Ahmed b. Hanbel'],a:1,e:'Fetva usulünün beşinci maddesi.'},
 {q:'el-Esediyye\'yi yeniden tasnif edip el-Müdevvene\'ye dönüştüren kimdir?',o:['İbn Vehb','Eşheb','Sahnûn','Esed b. Furât'],a:2,e:'Esed eseri İbnü\'l-Kâsım ile hazırlamıştı.'},
@@ -954,7 +959,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u6', no:6, src:'İdeal Özet s. 11', title:'Mülkiyet Teorisi: Malın Tanımı ve Haklar', ar:'نظرية الملكية: تعريف المال',
+id:'u6', no:6, title:'Mülkiyet Teorisi: Malın Tanımı ve Haklar', ar:'نظرية الملكية: تعريف المال',
 lead:'Malın üç tanımını, muhtar tanımdan çıkan sonuçları ve hak ile menfaatlerin mal sayılıp sayılmayacağı tartışmasını sonuçlarıyla birlikte öğreneceğiz.',
 html:`
 <h2>1. Malın Tanımları <span class="ar">المال</span></h2>
@@ -1003,7 +1008,7 @@ html:`
 </table>
 `,
 quiz:[
-{q:'Hanefîlerin mal tanımı neden eleştirilmiştir?',o:['Menfaati ve yeşillik, ilaç gibi tabiatın istemediği malları kapsamadığı için','Araziyi kapsamadığı için','Parayı kapsamadığı için','Zimmîleri dışladığı için'],a:0,e:'İdeal Özet\'teki not.'},
+{q:'Hanefîlerin mal tanımı neden eleştirilmiştir?',o:['Menfaati ve yeşillik, ilaç gibi tabiatın istemediği malları kapsamadığı için','Araziyi kapsamadığı için','Parayı kapsamadığı için','Zimmîleri dışladığı için'],a:0,e:'Bu tanım menfaatleri ve yeşillik, ilaç gibi tabiatın meyletmediği malları dışarıda bırakır.'},
 {q:'Muhtar tarife göre hangisi maldır?',o:['Güneş ışığı','Bir damla su','Havadaki kuş','Eceliyle ölmüş hayvanın eti'],a:2,e:'Fiilen ihraz edilmemiş ama hiyâzeti mümkün olan şey maldır.'},
 {q:'Hidâne hakkının mal sayılması hakkında hüküm nedir?',o:['İttifakla maldır','İttifakla mal değildir','Hanefîlere göre maldır','Cumhura göre maldır'],a:1,e:'Mal ile ilgisi olmayan haklar ittifakla mal değildir.'},
 {q:'Cumhurun menfaatin mal olduğuna dair delillerinden biri hangisidir?',o:['Menfaat saklanabilir','Şâri menfaati mehir kılmıştır, mehir ise ancak mal olabilir','İcâre kıyasa aykırıdır','Menfaat araz değildir'],a:1,e:'Kur\'an öğretiminin mehir olarak tayin edilmesi.'},
@@ -1013,7 +1018,7 @@ quiz:[
 
 // ÜNİTELER 7-12
 UNITS.push({
-id:'u7', no:7, src:'İdeal Özet s. 12', title:'Malın Kısımları', ar:'أقسام المال',
+id:'u7', no:7, title:'Malın Kısımları', ar:'أقسام المال',
 lead:'Malı Şâriin korumasına, istikrarına, benzerine, kullanımına ve diğer ölçütlere göre kısımlara ayıracak; her ayrımın doğurduğu fıkhî sonuçları öğreneceğiz.',
 html:`
 <h2>1. Şâriin Korumasına Göre: Mütekavvim – Gayr-ı Mütekavvim</h2>
@@ -1087,7 +1092,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u8', no:8, src:'İdeal Özet s. 13-15', title:'Mülkiyet ve Milk Çeşitleri', ar:'الملك وأنواعه',
+id:'u8', no:8, title:'Mülkiyet ve Milk Çeşitleri', ar:'الملك وأنواعه',
 lead:'Mülkiyetin tanımını, özel mülkiyete konu olmayan malları, milk-i tam ve milk-i nâkısı, menfaat mülkiyeti ile ibâha farkını ve şahsî yararlanma hakkının hükümlerini öğreneceğiz.',
 html:`
 <h2>1. Mülkiyet <span class="ar">الملك</span></h2>
@@ -1158,11 +1163,11 @@ quiz:[
 {q:'Menfaati belli süreyle vasiyet edilen evde varislerin mülkiyeti nedir?',o:['Milk-i tam','Rakabe mülkiyeti','İbâha','Şirket-i ibâha'],a:1,e:'Rakabe varislere, menfaat vasiyet edilene geçer; sonunda tam mülkiyete döner.'},
 {q:'Mâlikîlere göre kişinin yalnız kendisinin yararlanabildiği menfaate ne denir?',o:['Milk-i menfaat','Hakku\'l-intifâ\'','Rakabe','İbâha'],a:1,e:'Başkasını da yararlandırabiliyorsa milk-i menfaat denir.'},
 {q:'Düğün yemeğine çağrılan kişinin yemeği yanına alıp götürememesinin sebebi nedir?',o:['Yemek kıyemî maldır','Ona verilen yalnız ibâhadır, temlik değildir','Yemek gayr-ı mütekavvimdir','Şuf\'a hakkı vardır'],a:1,e:'İbâha yararlanma iznidir, devredilemez.'},
-{q:'Şahsî yararlanma hakkında süre dolmadan iptal hangi akitte mümkündür?',o:['İcâre','Vakıf','Vasiyet','İâre'],a:3,e:'İdeal Özet notu: "Sadece iârede süre dolmadan iptal edilebilir."'}
+{q:'Şahsî yararlanma hakkında süre dolmadan iptal hangi akitte mümkündür?',o:['İcâre','Vakıf','Vasiyet','İâre'],a:3,e:'Sadece iârede süre dolmadan iptal edilebilir.'}
 ]});
 
 UNITS.push({
-id:'u9', no:9, src:'İdeal Özet s. 16-17', title:'İrtifak Hakları ve Milk-i Tam', ar:'حقوق الارتفاق والملك التام',
+id:'u9', no:9, title:'İrtifak Hakları ve Milk-i Tam', ar:'حقوق الارتفاق والملك التام',
 lead:'Aynî yararlanma haklarını (şirb, mecra, mesîl, teallî, mürûr, civar), bunları doğuran sebepleri, şahsî intifa hakkından farkını ve milk-i tamın özellik ve sınırlarını öğreneceğiz.',
 html:`
 <h2>1. Aynî Yararlanma Hakkı (Hakku'l-İrtifak) <span class="ar">حق الارتفاق</span></h2>
@@ -1230,19 +1235,19 @@ html:`
 <li><b>Müdahale ihtimali:</b> Devlet, kamunun menfaati veya bir zararı gidermek için, zararını adilce gidermek şartıyla zorla da olsa mala el koyabilir (istimlak).</li>
 <li><b>Diğerlerinin hakkı:</b> Kişinin malında diğer Müslümanların da hakkı vardır; en bariz örneği zekâttır.</li>
 </ol>
-<p class="muted">Çiftçi notlarında ayrıca: ortak ve komşunun şuf'a ile cebren temellük hakkı; zarar doğuran stokçulukta cebri satış; borcunu ödemeyenin malına cebri icra; zorunlu hallerde fiyat belirleme (narh); mülkiyetin başkasına açıkça zarar verecek şekilde kullanılamaması.</p>
+<p class="muted">Ayrıca: ortak ve komşunun şuf'a ile cebren temellük hakkı; zarar doğuran stokçulukta cebri satış; borcunu ödemeyenin malına cebri icra; zorunlu hallerde fiyat belirleme (narh); mülkiyetin başkasına açıkça zarar verecek şekilde kullanılamaması.</p>
 `,
 quiz:[
 {q:'Özel mülk içindeki kuyu suyunda başkalarının hakkı nedir?',o:['Hem şirb hem şürb hakkı','Şürb (içme) hakkı var, şirb (sulama) hakkı yok','Hiçbir hak yok','Yalnız şirb hakkı'],a:1,e:'Engellenirse içme suyunu zorla alır.'},
 {q:'"الغرم بالغنم" kaidesi irtifak haklarında hangi hükmü açıklar?',o:['Mesîl kanalının bakımından irtifak hakkı sahibinin sorumlu olması','Teallî hakkının satılması','Umumi yolun herkese açık olması','Şuf\'anın komşuya tanınması'],a:0,e:'Nimet külfet karşılığıdır.'},
 {q:'Hanefîlere göre kat çıkma hakkının sabit olması için ne gerekir?',o:['Bedel ödenmesi','Daha önceden bir evin olması','Hâkim kararı','Komşu izni'],a:1,e:'Cumhura göre önceden ev olması gerekmez ve hak bedelle satılabilir.'},
 {q:'Hanefîlerde miras kalan haklardan biri değildir?',o:['İrtifak hakları','Ayıp muhayyerliği','Tayin muhayyerliği','Şart muhayyerliği'],a:3,e:'Şart muhayyerliği Hanefîlere göre muhayyerin ölümüyle sona erer.'},
-{q:'İdeal Özet\'e göre irtifak haklarını doğuran sebeplerden biri değildir?',o:['Umumi ortaklık','İvazlı akitte şart koşulması','Tekâdüm','Gasp'],a:3,e:'Gasp meşru bir mülkiyet veya hak sebebi değildir.'},
+{q:'İrtifak haklarını doğuran sebeplerden biri değildir?',o:['Umumi ortaklık','İvazlı akitte şart koşulması','Tekâdüm','Gasp'],a:3,e:'Gasp meşru bir mülkiyet veya hak sebebi değildir.'},
 {q:'Milk-i tamın sınırlamalarından biri hangisidir?',o:['Süreyle kayıtlı olması','Kişinin malında diğer Müslümanların da hakkının bulunması (zekât)','Kendi malını telef edenin tazmin etmesi','Mirasla geçmemesi'],a:1,e:'Diğer sınırlamalar: meşru edinme, meşru mecra, kamu yararına müdahale.'}
 ]});
 
 UNITS.push({
-id:'u10', no:10, src:'İdeal Özet s. 18-20', title:'Milk-i Tamın Sebepleri: İstîlâ ve Miras', ar:'أسباب الملك التام: الاستيلاء والميراث',
+id:'u10', no:10, title:'Milk-i Tamın Sebepleri: İstîlâ ve Miras', ar:'أسباب الملك التام: الاستيلاء والميراث',
 lead:'Milk-i tamı doğuran dört sebebin özelliklerini; mübah mallar üzerindeki istîlâyı (avlanma, ot ve ağaçlar, maden ve kenz, ölü toprağın ihyası) ve mirası öğreneceğiz.',
 html:`
 <h2>1. Milk-i Tamın Sebepleri ve Özellikleri</h2>
@@ -1325,7 +1330,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u11', no:11, src:'İdeal Özet s. 21-23', title:'Şuf\'a Hakkı', ar:'الشفعة',
+id:'u11', no:11, title:'Şuf\'a Hakkı', ar:'الشفعة',
 lead:'Şuf\'anın tanımını, meşruiyet delillerini, hangi mallarda sabit olduğunu, sebeplerini ve öncelik sırasını, şartlarını, talep aşamalarını, ödeme şeklini, müşterinin tasarruflarını ve şuf\'ayı düşüren sebepleri öğreneceğiz.',
 html:`
 <h2>1. Tanım ve Terimler</h2>
@@ -1403,7 +1408,7 @@ quiz:[
 {q:'Şuf\'anın hangi ilkeyle meşru olduğu söylenir?',o:['Akitlerde rıza ilkesi','Zararın giderilmesi (الضرر يزال) ve mefsedetin giderilmesinin önceliği','Ahde vefa','Hiyâzet'],a:1,e:'Rıza ilkesine aykırı olduğu için istihsanen sabittir.'},
 {q:'Bölünemeyen akarlarda şuf\'ayı kabul etmeyen mezhepler hangileridir?',o:['Hanefî ve Hanbelî','Şâfiî ve Ca\'ferî','Mâlikî ve Zâhirî','Hanefî ve Sevrî'],a:1,e:'Hz. Ömer\'in "Kuyuda şuf\'a yoktur" sözü.'},
 {q:'Abdülkerim Zeydan şuf\'anın konusu hakkında hangi görüşü benimser?',o:['Hanefî','Mâlikî','Şâfiî','Zâhirî'],a:3,e:'Zâhirîlere göre bütün akar ve menkullerde şuf\'a vardır.'},
-{q:'Hanefîlere göre halîd (irtifak) ortaklığında öncelik sırası hangisidir?',o:['Mürûr → şirb → mesîl','Şirb → mürûr → mesîl','Mesîl → şirb → mürûr','Şirb → mesîl → mürûr'],a:1,e:'İdeal Özet: Şirb → Mürûr → Mesil.'},
+{q:'Hanefîlere göre halîd (irtifak) ortaklığında öncelik sırası hangisidir?',o:['Mürûr → şirb → mesîl','Şirb → mürûr → mesîl','Mesîl → şirb → mürûr','Şirb → mesîl → mürûr'],a:1,e:'Sıra: Şirb → Mürûr → Mesil.'},
 {q:'Hanefîlere göre şuf\'a talep ettikten sonra vefat eden şuf\'adarın varislerinin hakkı var mıdır?',o:['Vardır','Yoktur','Yalnız erkek varislerin vardır','Hâkim karar verir'],a:1,e:'Cumhura göre vardır.'},
 {q:'Talebü\'l-husûmenin süresi İmam Muhammed ve Züfer\'e göre nedir?',o:['Süre sınırı yoktur','İlk fırsatta','Takrirden sonra bir ay içinde','Üç gün'],a:2,e:'Ebû Hanîfe\'ye göre sınır yok, Ebû Yûsuf\'a göre ilk fırsatta.'},
 {q:'Ebû Hanîfe\'ye göre şuf\'adar müşteriye yapılan indirimden faydalanır mı?',o:['Faydalanır, artıştan etkilenmez','Faydalanmaz','Hem indirim hem artıştan etkilenir','Hâkime bağlıdır'],a:0,e:'Şâfiî ve Hanbelîlere göre ne indirim ne artış etkiler.'},
@@ -1411,7 +1416,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u12', no:12, src:'İdeal Özet s. 24-25', title:'Akit: Tasarruf, Rükün ve İrade Beyanı', ar:'العقد: التصرف والأركان والصيغة',
+id:'u12', no:12, title:'Akit: Tasarruf, Rükün ve İrade Beyanı', ar:'العقد: التصرف والأركان والصيغة',
 lead:'Tasarrufun çeşitlerini, akdin tanımını ve rüknünü, irade beyan araçlarını, icap ve kabulün şartlarını, iç ve dış irade uyuşmazlıklarını, akit meclisini, akdin konusunu ve taraflarını öğreneceğiz.',
 html:`
 <h2>1. Tasarruf <span class="ar">التصرف</span></h2>
@@ -1495,7 +1500,7 @@ quiz:[
 {q:'"Dava, ikrar, yemin, kazf" hangi tür sözlü tasarruftur?',o:['Çift taraflı','Bir hakkı inşa veya ıskat eden tek taraflı','Hak inşa veya ıskatına yönelmeyen, Şâriin hüküm bağladığı tek taraflı','Fiilî'],a:2,e:'Vakıf, talak, ibrâ ise hak inşa veya ıskat eden tek taraflı tasarruflardır.'},
 {q:'Cumhura göre akdin rükünleri hangileridir?',o:['Yalnız icap ve kabul','İrade beyanı, akit meclisi, taraflar, akdin konusu','Taraflar ve bedel','İcap, kabul, şahit'],a:1,e:'Hanefîlere göre bunlar icap ve kabulün levâzımıdır.'},
 {q:'Muâtât (teâtî) ile kurulan akdi geçerli saymayan mezhep hangisidir?',o:['Hanefî','Mâlikî','Şâfiî','Hanbelî'],a:2,e:'Hanbelî ve Mâlikîlere göre mutlak olarak geçerlidir (râcih); Zeydîlere göre örfe bağlıdır.'},
-{q:'İdeal Özet\'e göre Hanefîler icap ve kabulün tek kişide toplanmasını hangi işlemlerde kabul etmez?',o:['Nikâh','Malî işlemler','Vekâlet','Vesayet'],a:1,e:'Hanbelîler her akitte, Şâfiî yalnız dedenin torunlarını evlendirmesinde kabul eder.'},
+{q:'Hanefîler icap ve kabulün tek kişide toplanmasını hangi işlemlerde kabul etmez?',o:['Nikâh','Malî işlemler','Vekâlet','Vesayet'],a:1,e:'Hanbelîler her akitte, Şâfiî yalnız dedenin torunlarını evlendirmesinde kabul eder.'},
 {q:'"Bu aracımı sana yirmi bin TL karşılığında hibe ettim" denirse hangi akit kurulur?',o:['Hibe','Satım (karinelerle teyit edilirse)','Âriyet','Akit kurulmaz'],a:1,e:'Belli bir akdin lafzıyla başka akit kastedilmesi halinde kastedilen akit kurulur.'},
 {q:'Hanefîlere göre akit meclisinde taraflara tanınan hak nedir?',o:['Meclis muhayyerliği','Kabul muhayyerliği','Şart muhayyerliği','Görme muhayyerliği'],a:1,e:'Şâfiîlere göre ise hıyâr-ı meclis vardır.'},
 {q:'Mevcut ve memlûk olmayan malların satışını teslim imkânına bakarak caiz gören kimdir?',o:['İmam Şâfiî','İbn Teymiyye','Ebû Hanîfe','İmam Züfer'],a:1,e:'Zeydan da bu görüşü tercih eder.'},
@@ -1504,7 +1509,7 @@ quiz:[
 
 // ÜNİTELER 13-18
 UNITS.push({
-id:'u13', no:13, src:'İdeal Özet s. 26-27', title:'Ehliyet ve Ehliyet Arızaları', ar:'الأهلية وعوارضها',
+id:'u13', no:13, title:'Ehliyet ve Ehliyet Arızaları', ar:'الأهلية وعوارضها',
 lead:'Vücub ve eda ehliyetini, insanın doğumdan rüşde kadar geçirdiği evreleri, semâvî ve iktisâbî ehliyet arızalarını (delilik, ateh, uyku, ölüm hastalığı, sefeh, sarhoşluk) öğreneceğiz.',
 html:`
 <h2>1. Ehliyet <span class="ar">الأهلية</span></h2>
@@ -1582,7 +1587,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u14', no:14, src:'İdeal Özet s. 28-29', title:'Velayet, Vekâlet ve Fuzûlî', ar:'الولاية والوكالة والفضولي',
+id:'u14', no:14, title:'Velayet, Vekâlet ve Fuzûlî', ar:'الولاية والوكالة والفضولي',
 lead:'Velayetin kısımlarını ve sıralamasını, vekâletin rükün, şart, çeşit ve hükümlerini, akdin hükmü ile hukuku ayrımını ve fuzûlînin tasarruflarını öğreneceğiz.',
 html:`
 <h2>1. Velayet <span class="ar">الولاية</span></h2>
@@ -1650,7 +1655,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u15', no:15, src:'İdeal Özet s. 29-30', title:'Akdin Ayıpları ve İkrah', ar:'عيوب العقد والإكراه',
+id:'u15', no:15, title:'Akdin Ayıpları ve İkrah', ar:'عيوب العقد والإكراه',
 lead:'Rızayı sakatlayan galat, gabn, tağrir ve ikrahı; bunların akitlere etkisini ve ikrahın fiillere, ikrarlara ve tasarruflara etkisini öğreneceğiz.',
 html:`
 <p>Akdin in'ikadı sırasında akde ilişen ve iradeyi sakatlayan kusurlar akdin sonucunu etkiler. Bunun temel nedeni İslam hukukunda sözleşmelerde <b>rıza ilkesinin ağırlığı</b>dır. Akdin ayıpları aslında iç ve dış irade uyuşmazlığı konusunu ilgilendirir.</p>
@@ -1698,7 +1703,7 @@ html:`
 <tr><th>Tasarruf</th><th>Hüküm</th></tr>
 <tr><td><b>Mükrehin ikrarları</b></td><td>Her iki türünde de ikrah altında yapılan ikrarlar <b>geçersizdir</b>; çünkü ikrah yanlış olma ihtimalini öne çıkarır.</td></tr>
 <tr><td><b>Feshe kabil olmayıp hezlden etkilenmeyen sözlü tasarruflar</b></td><td><b>Hanefîlere göre</b> talak, nikâh, ıtak, ric'at, yemin, nezir, zıhâr, îlâ (îlâdan rücû, muhâlaa, kısastan af) gibi tasarruflar her iki türde de ikrahtan etkilenmez, geçerlidir; Şâri bu işlemlerde lafzı yeterli görmüştür. <b>Cumhura göre</b> geçersizdir.</td></tr>
-<tr><td><b>Feshe kabil olan tasarruflar</b> (satım, icâre, hibe)</td><td><b>Hanefîler:</b> Gayr-ı mülcî ise tüm tasarruflar geçerlidir (İdeal Özet); mülcî ise Ebû Hanîfe'ye göre hezlden etkilenen satımlar <b>fasit</b> doğar, Züfer'e göre <b>mevkuf</b>tur; ikrahtan sonraki icazet akdi baştan sahih kılar. <b>Cumhur:</b> Mülcî veya gayr-ı mülcî, feshe kabil olsun olmasın tüm ikrah çeşitlerinde tüm tasarruflar geçersizdir.</td></tr>
+<tr><td><b>Feshe kabil olan tasarruflar</b> (satım, icâre, hibe)</td><td><b>Hanefîler:</b> Gayr-ı mülcî ise tüm tasarruflar geçerlidir; mülcî ise Ebû Hanîfe'ye göre hezlden etkilenen satımlar <b>fasit</b> doğar, Züfer'e göre <b>mevkuf</b>tur; ikrahtan sonraki icazet akdi baştan sahih kılar. <b>Cumhur:</b> Mülcî veya gayr-ı mülcî, feshe kabil olsun olmasın tüm ikrah çeşitlerinde tüm tasarruflar geçersizdir.</td></tr>
 </table>
 <p class="muted">Not: Fasit satımda Şâriin hakkı, ikrahta ise kul hakkı ihlal edilmiştir; icazetten önce itlaf veya geri dönülmez bir tasarrufa konu olursa kıymet lazım gelir.</p>
 
@@ -1715,7 +1720,7 @@ html:`
 <tr><th>Ridde</th><td>Kâfir olmaz, beynûnet (eşinden ayrılık) oluşmaz.</td></tr>
 <tr><th>İman</th><td>Müslüman olur; fakat irtidat ederse had uygulanmaz (imanın sübutunda şüphe).</td></tr>
 </table>
-<p class="muted">İdeal Özet'te "ikisine de yok" görüşü Ebû Hanîfe'ye nispet edilmiştir; ancak Ebû Hanîfe Tarafeyn içinde mükrihe kısas görüşündedir. Bu görüş Ebû Yûsuf'a aittir (81 sayfalık özet de böyle nakleder).</p>
+<p class="muted">Bazı özetlerde "ikisine de yok" görüşü Ebû Hanîfe'ye nispet edilir; ancak Ebû Hanîfe Tarafeyn içinde mükrihe kısas görüşündedir. Bu görüş Ebû Yûsuf'a aittir (81 sayfalık özet de böyle nakleder).</p>
 `,
 quiz:[
 {q:'Sergideki bakır yüzüğü altın sanıp hiçbir şey söylemeden alan kişinin akdi hakkında hüküm nedir?',o:['Batıl','Mevkuf','Sahih; bâtınî galatın etkisi yoktur','Fasit'],a:2,e:'İttifakla akde olumsuz etkisi yoktur.'},
@@ -1729,7 +1734,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u16', no:16, src:'İdeal Özet s. 30-31', title:'Akdin Tasnifleri', ar:'أقسام العقود',
+id:'u16', no:16, title:'Akdin Tasnifleri', ar:'أقسام العقود',
 lead:'Akitleri hükmü, aynın teslimi, bedel, sîga ile hükmün ilişkisi, sonuçlarının doğma zamanı ve diğer ölçütlere göre sınıflandıracak; muallak ve muzâf akitlerle şart nazariyesini öğreneceğiz.',
 html:`
 <h2>1. Hükmü Bakımından Akitler</h2>
@@ -1814,7 +1819,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u17', no:17, src:'İdeal Özet s. 32', title:'Muhayyerlikler', ar:'الخيارات',
+id:'u17', no:17, title:'Muhayyerlikler', ar:'الخيارات',
 lead:'Şart, tayin, görme ve ayıp muhayyerliklerinin tanımlarını, delillerini, şartlarını, akde etkilerini ve sona erme sebeplerini; ayrıca akdin sona erme yollarını öğreneceğiz.',
 html:`
 <p><b>Muhayyerlik:</b> Lehine muhayyerlik sabit olan tarafın, diğer tarafın rızasına bakmaksızın akdi feshedebilme yetkisi. Kaynağı bakımından:</p>
@@ -1830,11 +1835,11 @@ html:`
 <table class="t"><tr><th colspan="2">Şart muhayyerliği türleri</th></tr>
 <tr><td><b>Akdi fasit kılan şartlar</b></td><td>(1) Sürenin mutlak bırakılması, (2) ebedî olması, (3) belirsiz bir şarta bağlanması ("rüzgârın esmesine kadar"). Üç gün dolmadan düzeltilirse akit sahih olur.</td></tr>
 <tr><td><b>Sahih kabul edilenler: süresi belli olanlar</b></td><td><b>Ebû Hanîfe, Züfer, Şâfiî:</b> en çok 3 gün. <b>İmameyn, Hanbelî, Mecelle:</b> ihtiyaca bağlı muayyen süre. <b>Mâlik:</b> mebîin durumuna bağlı muayyen süre.</td></tr></table>
-<p><b>Sona ermesi:</b> (1) Sarahaten veya delaleten icazet ya da fesih; (2) mebî müşteri elindeyken ayıplı hale gelmesi veya helaki; (3) sürenin sona ermesi; (4) muhayyer tarafın vefatı (Hanefî ve Hanbelîlerde miras kalmaz; Şâfiî, Mâlikî ve Ca'ferîlere göre varise geçer). Faruk Yıldız notunda ayrıca: mebîde kabzdan sonra bitişik veya ayrı artış.</p>
+<p><b>Sona ermesi:</b> (1) Sarahaten veya delaleten icazet ya da fesih; (2) mebî müşteri elindeyken ayıplı hale gelmesi veya helaki; (3) sürenin sona ermesi; (4) muhayyer tarafın vefatı (Hanefî ve Hanbelîlerde miras kalmaz; Şâfiî, Mâlikî ve Ca'ferîlere göre varise geçer). Ayrıca: mebîde kabzdan sonra bitişik veya ayrı artış.</p>
 
 <h2>2. Tayin Muhayyerliği <span class="ar">خيار التعيين</span></h2>
 <div class="box key">Satım akdinde ve bedelli hibe gibi aynın temlikini ifade eden bedelli işlemlerde, bedelleri ve sıfatları malum en fazla üç mebîden birini seçme hakkı.</div>
-<ul><li>İdeal Özet'e göre Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer'e göre mebîdeki bilinmezlik sebebiyle caiz değildir.</li><li><b>İttifakla mirasa konu olur</b> (mülkiyetin ayrıştırılması zorunluluğu).</li><li>Ebû Hanîfe'ye göre 3 gün, İmameyn'e göre muayyen olması yeterlidir.</li></ul>
+<ul><li>Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer'e göre mebîdeki bilinmezlik sebebiyle caiz değildir.</li><li><b>İttifakla mirasa konu olur</b> (mülkiyetin ayrıştırılması zorunluluğu).</li><li>Ebû Hanîfe'ye göre 3 gün, İmameyn'e göre muayyen olması yeterlidir.</li></ul>
 <div class="grid2"><div class="card-s"><h4>Sıhhat şartları</h4><ol><li>En fazla üç şey arasında olacak.</li><li>Birbirinden farklı olacak.</li><li>Fiyatları ve sıfatları malum olacak.</li><li>Süresi belli olacak.</li></ol></div><div class="card-s"><h4>Sona erdiren sebepler</h4><ol><li>Doğrudan veya dolaylı olarak tercih.</li><li>Müşterinin kabzından sonra birinin helaki (helak olan mahal olarak belirlenir).</li><li>Kabzdan sonra birinin ayıplanması.</li></ol></div></div>
 
 <h2>3. Görme (Ru'yet) Muhayyerliği <span class="ar">خيار الرؤية</span></h2>
@@ -1862,7 +1867,7 @@ html:`
 `,
 quiz:[
 {q:'Şart muhayyerliğinin delillerinden biri hangisidir?',o:['Urve el-Bârikî hadisi','Habbân b. Münkız hadisi','Muâz hadisi','Hilfü\'l-fudûl'],a:1,e:'Enes b. Malik hadisi ve İbn Ömer rivayeti de delildir.'},
-{q:'Mecelle şart muhayyerliğinin süresinde kimin görüşünü benimsemiştir?',o:['Ebû Hanîfe (3 gün)','İmameyn ve Hanbelî (ihtiyaca bağlı muayyen süre)','Mâlik','Şâfiî'],a:1,e:'İdeal Özet: İmameyn-Hanbelî-Mecelle.'},
+{q:'Mecelle şart muhayyerliğinin süresinde kimin görüşünü benimsemiştir?',o:['Ebû Hanîfe (3 gün)','İmameyn ve Hanbelî (ihtiyaca bağlı muayyen süre)','Mâlik','Şâfiî'],a:1,e:'Mecelle bu konuda İmameyn ve Hanbelîlerin görüşünü benimsemiştir.'},
 {q:'Hangisi akdi fasit kılan şart muhayyerliğidir?',o:['Üç günlük muhayyerlik','Rüzgârın esmesine kadar muhayyerlik','İki günlük muhayyerlik','Bir haftalık muhayyerlik (İmameyn\'e göre)'],a:1,e:'Süre mutlak, ebedî veya belirsiz bırakılırsa akit fasit olur.'},
 {q:'İttifakla mirasa konu olan muhayyerlik hangisidir?',o:['Şart','Görme','Tayin','Meclis'],a:2,e:'Ayıp muhayyerliği de ittifakla miras kalır.'},
 {q:'Görme muhayyerliğini kabul etmeyen imam kimdir?',o:['Ebû Hanîfe','İmam Mâlik','İmam Şâfiî','Ahmed b. Hanbel'],a:2,e:'Görülmeyen malın satışını caiz görmez.'},
@@ -1872,7 +1877,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u18', no:18, src:'İdeal Özet s. 33-34', title:'Ceza Nazariyesi', ar:'نظرية العقوبة',
+id:'u18', no:18, title:'Ceza Nazariyesi', ar:'نظرية العقوبة',
 lead:'Suç ve ceza kavramlarını, cezanın amacı ve temel ilkelerini, kısas ve diyet, had, devlet aleyhine işlenen suçlar ve ta\'zîr cezalarını öğreneceğiz.',
 html:`
 <h2>1. Suç ve Ceza</h2>
@@ -1926,7 +1931,7 @@ html:`
 <tr><td><b>Zinâ</b></td><td>Suç beyyine ve ikrar ile sabit olur. Mükellef ve baliğ kişilerin önden birleşmesi gerekir. 4 erkek, 4 ayrı mecliste (aynı mecliste) şahitlik eder; şahitler fiili açık seçik görmüş olmalıdır.</td></tr>
 <tr><td><b>Kazf</b> <span class="ar">القذف</span></td><td>Yabancı kadına zina iftirası 80 celde; karısına yaparsa liân. Dava açmak şarttır; sonrasında af geçerli değildir. İspat edemezse bir daha şahitliği geçerli değildir.</td></tr>
 <tr><td><b>Şürb</b></td><td>Cumhur 80 celdenin hepsini, Şâfiî 40 tanesini had sayar. Hamr dışındaki içkilerin haddine <b>hadd-i iskâr</b> denir; hamr dışındaki içkilerde had sarhoş olana uygulanır. İçki haddi uygulanmayanlar: (1) zımmî, (2) irtidat öncesi içki içip sonra İslam'a giren, (3) çocuk, deli, mükreh, susuz kişiler.</td></tr>
-<tr><td><b>Sirkat</b> (hırsızlık)</td><td>Nisap miktarı (İdeal Özet: 4,8 gr altın veya karşılığı) mütekavvim bir malı gizlice mahfuz yerden almak ile suç sabit olur. Dava açmış olma şartı vardır; sonrasında af geçerli değildir. El bilekten kesilir. Nisap Hanefîlere göre 10 dirhem (1 dinar), cumhura göre çeyrek dinar.</td></tr>
+<tr><td><b>Sirkat</b> (hırsızlık)</td><td>Nisap miktarı (4,8 gr altın veya karşılığı) mütekavvim bir malı gizlice mahfuz yerden almak ile suç sabit olur. Dava açmış olma şartı vardır; sonrasında af geçerli değildir. El bilekten kesilir. Nisap Hanefîlere göre 10 dirhem (1 dinar), cumhura göre çeyrek dinar.</td></tr>
 </table>
 
 <h2>4. Devlet Aleyhine İşlenen Suçlar</h2>
@@ -1942,7 +1947,7 @@ html:`
 `,
 quiz:[
 {q:'Bir şeyin suç olmasının şartlarından biri değildir?',o:['Kanunilik','Maddî unsur','Hukuka aykırılık','Mağdurun şikâyeti'],a:3,e:'Dört unsur: kanunilik, maddî, hukuka aykırılık, manevî.'},
-{q:'İdeal Özet\'e göre zina ve sirkatte zamanaşımı Ebû Hanîfe\'ye göre ne kadardır?',o:['1 ay','6 ay','1 yıl','Zamanaşımı yoktur'],a:2,e:'İmameyn 1 ay der; cumhur zamanaşımını kabul etmez.'},
+{q:'Zina ve sirkatte zamanaşımı Ebû Hanîfe\'ye göre ne kadardır?',o:['1 ay','6 ay','1 yıl','Zamanaşımı yoktur'],a:2,e:'İmameyn 1 ay der; cumhur zamanaşımını kabul etmez.'},
 {q:'Ebû Hanîfe\'ye göre amd hangisidir?',o:['Sopa ile öldürme','Bıçak, tabanca gibi bizzat öldürme aleti ile öldürme','Suda boğma','Zehirleme'],a:1,e:'İmameyn büyük taş, boğma, zehirlemeyi de amd sayar.'},
 {q:'Trafik kazası hangi öldürme türüne örnektir ve sonucu nedir?',o:['Hata – kefaret','Tesebbüb – âkileye diyet, kefaret yok','Şibh-i amd – diyet-i muğallaza','Amd – kısas'],a:1,e:'Tesebbübde kefaret ve günah yoktur.'},
 {q:'Kasten organ kesmede kaç organda kısas vardır?',o:['5','7','10','Hepsinde'],a:1,e:'El, ayak, burun, kulak, göz, diş, baş.'},
@@ -2138,7 +2143,7 @@ const EXTRA_MCQ = [
 {u:14,q:'Hanefîlere göre vekilin satım akdinde akdin hukuku (teslim, bedeli isteme) kime döner?',o:['Müvekkile','Vekile','Hâkime','Her ikisine eşit'],a:1,e:'Hüküm müvekkile, hukuk vekile döner; nikâh gibi akitlerde hukuk da müvekkile.'},
 {u:15,q:'Hanefîlere göre ikrahla yapılan satım akdinin hükmü nedir?',o:['Batıl','Fasit; icazetle sahih olur','Nafiz','Lazım'],a:1,e:'Rıza yoktur ama ihtiyar bozulmamışsa akit fasittir; ikrah kalktıktan sonra icazetle sahih olur.'},
 {u:16,q:'Hangisi izafeyi kabul etmeyen (ancak müneccez kurulabilen) akittir?',o:['Vekâlet','İcâre','Hibe','Kefalet'],a:2,e:'Aynın temlikini ifade eden akitler ve nikâh izafeyi kabul etmez.'},
-{u:17,q:'Tayin muhayyerliğini caiz görmeyenler kimlerdir?',o:['Hanefîler','Mâlikîler','Şâfiî, Ahmed b. Hanbel ve Züfer','Ebû Hanîfe ve İmameyn'],a:2,e:'İdeal Özet\'e göre Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer mebîdeki bilinmezlik sebebiyle caiz görmez.'},
+{u:17,q:'Tayin muhayyerliğini caiz görmeyenler kimlerdir?',o:['Hanefîler','Mâlikîler','Şâfiî, Ahmed b. Hanbel ve Züfer','Ebû Hanîfe ve İmameyn'],a:2,e:'Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer mebîdeki bilinmezlik sebebiyle caiz görmez.'},
 {u:18,q:'Şürb haddi Şâfiîlere göre kaç değnektir?',o:['40','60','80','100'],a:0,e:'Cumhura göre 80; Şâfiî 40\'ını had, fazlasını ta\'zîr sayar.'},
 {u:18,q:'Hirâbe suçunu şehir dışında işlenmesi şartıyla kabul edenler kimlerdir?',o:['Şâfiî ve Mâlikî','Ebû Hanîfe ve Ahmed b. Hanbel','Zâhirîler','Ca\'ferîler'],a:1,e:'Diğerlerine göre şehir içinde de işlenebilir.'}
 ];
@@ -2205,7 +2210,7 @@ INTERVIEW.push(
 {u:17,src:'2022',q:'Mehmet kuyumcudan gri yakut sanarak hiçbir şey söylemeden bir mücevher alır; taş mavi yakut ya da pırlanta çıkar. Ayrıca "Senden şu gri yakutu satın aldım" demiş olsaydı sonuç ne olurdu? Akdin kusurları çerçevesinde çözünüz.',k:['Sözsüz alımda yanılma bâtınî galattır','Bâtınî galatta cins veya vasıf farkı olsun akit sahihtir; itibar ibareyedir','"Şu gri yakutu aldım" denirse zâhirî galat olur','Pırlanta çıkarsa cinste galat: mahal yok sayılır, akit batıldır','Mavi yakut çıkarsa vasıfta galat: akit mevkuftur, vasıf muhayyerliğiyle feshedilebilir','Nikâh gibi feshi kabil olmayan akitlerde çoğunluğa göre işlem geçerlidir; Hanbelîlere göre fesih mümkündür']}
 );
 
-// İdeal Özet sırasına göre eklenen sınav verileri
+// Ünite sırasına göre eklenen sınav verileri
 TERMS.push(
 {t:'Cahiliye',ar:'الجاهلية',d:'Hz. Peygamber\'den önceki dönem ile o dönemin inanç, kültür, örf ve hukuku.',u:1},
 {t:'Kabile asabiyeti',ar:'العصبية القبلية',d:'Haklı haksız ayırmadan kabileye yardımı gerektiren kan bağı dayanışması.',u:1},
@@ -2275,11 +2280,11 @@ TERMS.push(
 TF.push(
 {s:'İslam, kasâme uygulamasını cahiliyedeki şekliyle bırakmıştır.',a:true,e:'Kasâme, hul\', şirket, mudârebe olduğu gibi bırakılanlardandır.',u:1},
 {s:'Cahiliye Araplarında mehri evlenen kadın alırdı.',a:false,e:'Mehri veli alırdı; İslam onu kadının hakkı yaptı.',u:1},
-{s:'İdeal Özet\'e göre icma tâbi kaynaklar arasındadır.',a:true,e:'Aslî kaynaklar Kitap ve Sünnet; tâbi kaynaklar kıyas, mesalih-i mürsele, örf, icma.',u:3},
+{s:'İcma tâbi kaynaklar arasında sayılır.',a:true,e:'Aslî kaynaklar Kitap ve Sünnet; tâbi kaynaklar kıyas, mesalih-i mürsele, örf, icma.',u:3},
 {s:'Mütevâtir sünnetin inkârı küfrü gerektirir.',a:true,e:'Kesin bilgi ifade eder, amel farzdır.',u:3},
 {s:'Peygamber asrında fakihler arasında ihtilaf vardı.',a:false,e:'Bu devirdeki içtihat vahiyden müstakil değildi ve ihtilaf yoktu.',u:4},
 {s:'Bedâiu\'s-sanâi\' duraklama devrinde yazılmıştır.',a:true,e:'Kâsânî (587).',u:4},
-{s:'İmam Şâfiî âhâd hadisi mürsel ve kıyasa tercih eder.',a:true,e:'İdeal Özet, s. 10.',u:5},
+{s:'İmam Şâfiî âhâd hadisi mürsel ve kıyasa tercih eder.',a:true,e:'Şâfiî, âhâd hadisi mürsel hadise ve kıyasa tercih etmiştir.',u:5},
 {s:'Ahmed b. Hanbel fıkıh görüşlerini bizzat bir kitapta toplamıştır.',a:false,e:'Yazmayı kerih gördü; öğrencileri derledi.',u:5},
 {s:'Muhtar tarife göre bir damla su mal sayılır.',a:false,e:'Mutad yolla faydalanılamadığı için mal değildir.',u:6},
 {s:'Mislî mallar zimmette deyn olarak sabit olabilir.',a:true,e:'Bu yüzden karz ve selem konusu olurlar.',u:7},
@@ -2287,7 +2292,7 @@ TF.push(
 {s:'İbâha ile elde edilen yararlanma hakkı başkasına devredilebilir.',a:false,e:'İbâha yalnız yararlanma iznidir.',u:8},
 {s:'Özel havuzda ihraz edilmiş suda kural olarak kimsenin şürb hakkı yoktur.',a:true,e:'Ancak zorlukta yakın çevrede su bulamayanın içme hakkı doğar ve kullandığını tazmin eder.',u:9},
 {s:'Sahipli arazide kendiliğinden yetişen ağaçlar mübah maldır.',a:false,e:'Ağaçlar sahipli arazide nasıl yetişirse yetişsin özel mülktür; otlar farklıdır.',u:10},
-{s:'Varisi olmayan kişinin varisi hazinedir.',a:true,e:'İdeal Özet, s. 20.',u:10},
+{s:'Varisi olmayan kişinin varisi hazinedir.',a:true,e:'Varisi bulunmayanın malı hazineye (beytülmâle) kalır.',u:10},
 {s:'Hanefîlere göre aynı mertebedeki şuf\'adarlar hisseleri oranında paylaşır.',a:false,e:'Hanefîlere göre kişi sayısına göre, cumhura göre hisse oranına göre.',u:11},
 {s:'Hanbelîlere göre icap ve kabulün tek kişide toplanması nikâh dahil her akitte geçerlidir.',a:true,e:'Şâfiî yalnız dedenin torunlarını evlendirmesinde kabul eder.',u:12},
 {s:'Delilik doğrudan hacr sebebidir.',a:true,e:'Yargı kararı aranmaz.',u:13},
@@ -2301,7 +2306,7 @@ TF.push(
 EXTRA_MCQ.push(
 {u:1,q:'Hz. Peygamber İslam\'dan önce kiminle ortaklık (şirket) yapmıştı?',o:['Ebû Bekir','Sâib b. Ebi\'s-Sâib','Abdullah b. Cüd\'ân','Ebû Talib'],a:1,e:'İslam şirket akdini kabul edip şartlarını belirledi.'},
 {u:3,q:'"Hırsızın eli sağ el ve bilekten kesilir" açıklaması sünnetin hangi işlevidir?',o:['Mücmeli tefsir','Âmmı tahsis','Mutlakı takyid','Nesih'],a:2,e:'Ayette hangi elin nereden kesileceği belirtilmemiştir.'},
-{u:4,q:'İdeal Özet\'e göre 6. evreye ne ad verilir?',o:['Tedvin devri','Metin-şerh-haşiye devri','Müctehitler devri','Tâbiîn asrı'],a:1,e:'Bağdat\'ın düşüşünden günümüze.'},
+{u:4,q:'Fıkıh tarihinin 6. evresine ne ad verilir?',o:['Tedvin devri','Metin-şerh-haşiye devri','Müctehitler devri','Tâbiîn asrı'],a:1,e:'Bağdat\'ın düşüşünden günümüze.'},
 {u:5,q:'İmam Mâlik\'in usulünde kıyastan önce gelen delil hangisidir?',o:['Mesalih-i mürsele','Ehl-i Medine ameli','İstihsan','Sedd-i zerâi'],a:1,e:'Kitap → Sünnet → İcma → Ehl-i Medine → Kıyas → ...'},
 {u:7,q:'Hangisi kınye malına örnektir?',o:['Satış için alınan araba','Binmek için alınan araba','Kiraya verilen ev','Altın'],a:1,e:'Ticaret için değil kendi kullanımı için edinilen mal.'},
 {u:9,q:'Umumi yola bakan akarda çıkma türü yapılar için Ebû Hanîfe\'ye göre ne gerekir?',o:['Hiçbir şey','Komşuların izni','Yetkililerden izin','Bedel ödenmesi'],a:2,e:'Zarar vermemek kaydıyla pencere ve kapı açılabilir.'},
@@ -2309,7 +2314,7 @@ EXTRA_MCQ.push(
 {u:11,q:'Ebû Yûsuf\'a göre alt mertebedeki şuf\'adarın hakkının sübutu için ne gerekir?',o:['Üst mertebedekinin vazgeçmesi','Üst mertebede kimsenin bulunmaması','Hâkim kararı','Bedelin peşin ödenmesi'],a:1,e:'Mirastaki hacb hükümlerinden hareket eder.'},
 {u:12,q:'Gaipler arasındaki yazışmada akit meclisi neresidir?',o:['Mektubun yazıldığı yer','Mektubun açılıp okunduğu yer','Satıcının evi','Mahkeme'],a:1,e:'Hazırda âkidlerin bulunduğu yer, gaipte mektubun açıldığı yer.'},
 {u:14,q:'Vasisi olan küçüğün malını satan fuzûlîye hâkimin icazeti neden geçersizdir?',o:['Hâkim ehliyetsizdir','İcazet o tasarrufta hakkı olan kişiden (vasiden) gelmelidir','Akit batıldır','Satım mevkuf olamaz'],a:1,e:'İcazetin geçerlilik şartlarından biri.'},
-{u:16,q:'"Talak inşallah sözüne bağlanırsa" Hanefî ve Şâfiîlere göre hüküm nedir?',o:['Geçerli','Geçersiz','Mevkuf','Muzâf'],a:1,e:'İdeal Özet, akdin tasnifleri sayfası.'},
+{u:16,q:'"Talak inşallah sözüne bağlanırsa" Hanefî ve Şâfiîlere göre hüküm nedir?',o:['Geçerli','Geçersiz','Mevkuf','Muzâf'],a:1,e:'Bu iki mezhebe göre \"inşallah\" sözüne bağlanan talak geçersizdir.'},
 {u:18,q:'Had cezalarında af yetkisi hangi suçlarda istisnadır?',o:['Zina ve şürb','Kazf ve sirkat','Ridde ve bağy','Hirâbe'],a:1,e:'Kazf ve sirkat hariç diğer hadlerde mağdurun ve devletin af yetkisi yoktur.'}
 );
 
@@ -2356,16 +2361,15 @@ function home(){
  <section class="hero"><div>
   <div class="u-kicker">İslam Hukukuna Giriş · Ders Programı</div>
   <h1>Fıkıh İlmine Giriş</h1>
-  <p class="lead">İdeal Medhal Özeti'nin ders sırasına göre hazırlanmış ${UNITS.length} ünitelik konu anlatımı: İslam öncesi Araplardan şeriat ve fıkıha, fıkıh tarihinden mezheplere, mal, mülkiyet, şuf'a, akit ve ceza nazariyesine. Her ünitenin sonunda kısa bir test, ayrıca ayrı bir sınav merkezi.</p>
+  <p class="lead">${UNITS.length} ünitelik konu anlatımı: İslam öncesi Araplardan şeriat ve fıkıha, fıkıh tarihinden mezheplere, mal, mülkiyet, şuf'a, akit ve ceza nazariyesine. Her ünitenin sonunda kısa bir test, ayrıca ayrı bir sınav merkezi.</p>
   <p class="muted">${done} / ${UNITS.length} ünite testi tamamlandı</p>
  </div><div class="hero-ar">المدخل لدراسة<br>الشريعة الإسلامية</div></section>
  <div class="entry">
   <a href="#unite-1"><span class="tag">Konu Anlatımı</span><h3>Ünitelerle öğren</h3><p>${UNITS.length} ünite, Arapça terimler, tablolar ve ünite sonu testleri.</p></a>
   <a href="#sinav"><span class="tag">Sınav Merkezi</span><h3>Kendini dene</h3><p>Test, doğru-yanlış, eşleştirme, bilgi kartları, mülakat ve vaka analizi.</p></a>
  </div>
- <div class="sec-title">Ders Taksimatı <span class="muted" style="font-family:var(--sans);font-size:14px;font-weight:400">· İdeal Medhal Özeti sırası</span></div>
- <div class="units-grid">${UNITS.map(u=>{const p=progress[u.id];return `<a class="u-card ${p?'done':''}" href="#unite-${u.no}"><span class="u-no">${u.no}</span><span><b>${esc(u.title)}</b><span class="ar">${u.ar}</span><span class="src">${esc(u.src||'')}</span>${p?`<small>Test: ${p.s}/${p.t}</small>`:''}</span></a>`}).join('')}</div>
- <p class="muted" style="margin-top:36px;border-top:1px solid var(--line);padding-top:14px">Ders sırası ve iskelet: <i>İslam Fıkhına Giriş Özeti</i> (İdeal Medhal Özeti, 2021). Genişletme: Yusuf Çiftçi, <i>İslam Hukukuna Giriş Ders Notları</i>; Zeki Koçak – Fikret Güneş, <i>İslam Hukukuna Giriş</i> (DİYK Erzurum 2011); Faruk Yıldız usul ve medhal notları; M. Mehmetoğlu – H. İ. Aydın, <i>İslam Hukuku'na Giriş Özet Çalışması</i>; <i>Medhal Arapça Özet</i>; Fıkıh İlmine Giriş çalışma soruları ve 2022 Medhal sınavı cevapları. Hepsi Abdülkerîm Zeydân'ın <span class="ar">المدخل لدراسة الشريعة الإسلامية</span> eserini esas alır.</p>`;
+ <div class="sec-title">Ders Taksimatı</div>
+ <div class="units-grid">${UNITS.map(u=>{const p=progress[u.id];return `<a class="u-card ${p?'done':''}" href="#unite-${u.no}"><span class="u-no">${u.no}</span><span><b>${esc(u.title)}</b><span class="ar">${u.ar}</span>${p?`<small>Test: ${p.s}/${p.t}</small>`:''}</span></a>`}).join('')}</div>`;
 }
 
 /* ---------- UNIT ---------- */
@@ -2381,7 +2385,7 @@ function unit(n){
  <aside class="side">${UNITS.map(x=>`<a href="#unite-${x.no}" class="${x.no===n?'on':''}"><span class="n">${x.no}</span><span>${esc(x.title)}</span>${progress[x.id]?'<span class="ok">✓</span>':''}</a>`).join('')}</aside>
  <article>
   <nav class="strip" id="strip">${UNITS.map(x=>`<a href="#unite-${x.no}" class="${x.no===n?'on':''}"><span class="n">${x.no}</span><span>${esc(x.title)}</span>${progress[x.id]?' ✓':''}</a>`).join('')}</nav>
-  <div class="u-head"><div class="u-kicker">Ünite ${u.no}${u.src?`<span class="src-chip">${esc(u.src)}</span>`:''}</div><h1>${esc(u.title)}</h1><span class="ar">${u.ar}</span></div>
+  <div class="u-head"><div class="u-kicker">Ünite ${u.no}</div><h1>${esc(u.title)}</h1><span class="ar">${u.ar}</span></div>
   <p class="u-lead">${esc(u.lead)}</p>
   ${u.html}
   <section class="quiz-box" id="quiz"><h2>Ünite Sonu Testi</h2><p class="muted">Bir seçeneğe tıkladığınızda cevap ve açıklama hemen görünür.</p><div id="qz"></div></section>

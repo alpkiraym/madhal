@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Medhal · Fıkıh İlmine Giriş</title>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1">
@@ -301,6 +301,10 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
 .crumb .csep{color:var(--line);font-size:20px;line-height:1}
 .crumb .pmark{background:#f4ead3;color:#1f5a45;border:1px solid #e6d6ae}
 @media (max-width:560px){.crumb{gap:4px}.crumb .mark,.crumb .pmark{width:32px;height:32px}.crumb .csep{font-size:16px}.crumb .brand > span:last-child{display:none}}
+.sig{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:5px 12px calc(5px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.7rem;letter-spacing:.02em;color:var(--muted)}
+.sig b{color:#1f5a45;font-weight:600}
+.sig i{font-style:normal;opacity:.5}
+body{padding-bottom:34px} /* şerit son satırı kapatmasın */
 </style>
 </head>
 <body>
@@ -310,6 +314,7 @@ details summary{cursor:pointer;font-weight:600;color:var(--accent)}
  <span id="bldSlot" style="margin-left:auto"></span>
 </div></header>
 <main class="wrap" id="app"></main>
+<div class="sig"><span>© 2026 Her hakkı saklıdır</span><i>·</i><span>Designed by: <b>M.ALPKİRAY</b></span></div>
 <script>window.BLD_APP = 'Medhal'; window.BLD_PREFIX = 'medhal2:'; window.BLD_SLOT = '#bldSlot';</script>
 <!--BILDIR-->
 
@@ -346,16 +351,15 @@ function home(){
  <section class="hero"><div>
   <div class="u-kicker">İslam Hukukuna Giriş · Ders Programı</div>
   <h1>Fıkıh İlmine Giriş</h1>
-  <p class="lead">İdeal Medhal Özeti'nin ders sırasına göre hazırlanmış ${UNITS.length} ünitelik konu anlatımı: İslam öncesi Araplardan şeriat ve fıkıha, fıkıh tarihinden mezheplere, mal, mülkiyet, şuf'a, akit ve ceza nazariyesine. Her ünitenin sonunda kısa bir test, ayrıca ayrı bir sınav merkezi.</p>
+  <p class="lead">${UNITS.length} ünitelik konu anlatımı: İslam öncesi Araplardan şeriat ve fıkıha, fıkıh tarihinden mezheplere, mal, mülkiyet, şuf'a, akit ve ceza nazariyesine. Her ünitenin sonunda kısa bir test, ayrıca ayrı bir sınav merkezi.</p>
   <p class="muted">${done} / ${UNITS.length} ünite testi tamamlandı</p>
  </div><div class="hero-ar">المدخل لدراسة<br>الشريعة الإسلامية</div></section>
  <div class="entry">
   <a href="#unite-1"><span class="tag">Konu Anlatımı</span><h3>Ünitelerle öğren</h3><p>${UNITS.length} ünite, Arapça terimler, tablolar ve ünite sonu testleri.</p></a>
   <a href="#sinav"><span class="tag">Sınav Merkezi</span><h3>Kendini dene</h3><p>Test, doğru-yanlış, eşleştirme, bilgi kartları, mülakat ve vaka analizi.</p></a>
  </div>
- <div class="sec-title">Ders Taksimatı <span class="muted" style="font-family:var(--sans);font-size:14px;font-weight:400">· İdeal Medhal Özeti sırası</span></div>
- <div class="units-grid">${UNITS.map(u=>{const p=progress[u.id];return `<a class="u-card ${p?'done':''}" href="#unite-${u.no}"><span class="u-no">${u.no}</span><span><b>${esc(u.title)}</b><span class="ar">${u.ar}</span><span class="src">${esc(u.src||'')}</span>${p?`<small>Test: ${p.s}/${p.t}</small>`:''}</span></a>`}).join('')}</div>
- <p class="muted" style="margin-top:36px;border-top:1px solid var(--line);padding-top:14px">Ders sırası ve iskelet: <i>İslam Fıkhına Giriş Özeti</i> (İdeal Medhal Özeti, 2021). Genişletme: Yusuf Çiftçi, <i>İslam Hukukuna Giriş Ders Notları</i>; Zeki Koçak – Fikret Güneş, <i>İslam Hukukuna Giriş</i> (DİYK Erzurum 2011); Faruk Yıldız usul ve medhal notları; M. Mehmetoğlu – H. İ. Aydın, <i>İslam Hukuku'na Giriş Özet Çalışması</i>; <i>Medhal Arapça Özet</i>; Fıkıh İlmine Giriş çalışma soruları ve 2022 Medhal sınavı cevapları. Hepsi Abdülkerîm Zeydân'ın <span class="ar">المدخل لدراسة الشريعة الإسلامية</span> eserini esas alır.</p>`;
+ <div class="sec-title">Ders Taksimatı</div>
+ <div class="units-grid">${UNITS.map(u=>{const p=progress[u.id];return `<a class="u-card ${p?'done':''}" href="#unite-${u.no}"><span class="u-no">${u.no}</span><span><b>${esc(u.title)}</b><span class="ar">${u.ar}</span>${p?`<small>Test: ${p.s}/${p.t}</small>`:''}</span></a>`}).join('')}</div>`;
 }
 
 /* ---------- UNIT ---------- */
@@ -371,7 +375,7 @@ function unit(n){
  <aside class="side">${UNITS.map(x=>`<a href="#unite-${x.no}" class="${x.no===n?'on':''}"><span class="n">${x.no}</span><span>${esc(x.title)}</span>${progress[x.id]?'<span class="ok">✓</span>':''}</a>`).join('')}</aside>
  <article>
   <nav class="strip" id="strip">${UNITS.map(x=>`<a href="#unite-${x.no}" class="${x.no===n?'on':''}"><span class="n">${x.no}</span><span>${esc(x.title)}</span>${progress[x.id]?' ✓':''}</a>`).join('')}</nav>
-  <div class="u-head"><div class="u-kicker">Ünite ${u.no}${u.src?`<span class="src-chip">${esc(u.src)}</span>`:''}</div><h1>${esc(u.title)}</h1><span class="ar">${u.ar}</span></div>
+  <div class="u-head"><div class="u-kicker">Ünite ${u.no}</div><h1>${esc(u.title)}</h1><span class="ar">${u.ar}</span></div>
   <p class="u-lead">${esc(u.lead)}</p>
   ${u.html}
   <section class="quiz-box" id="quiz"><h2>Ünite Sonu Testi</h2><p class="muted">Bir seçeneğe tıkladığınızda cevap ve açıklama hemen görünür.</p><div id="qz"></div></section>

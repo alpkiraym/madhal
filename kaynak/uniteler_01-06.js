@@ -1,8 +1,8 @@
-// ÜNİTELER 1-6 (İdeal Medhal Özeti sırası)
+// ÜNİTELER 1-6
 const UNITS = [];
 
 UNITS.push({
-id:'u1', no:1, src:'İdeal Özet s. 2', title:'İslam\'dan Önce Araplar', ar:'حالة العرب قبل الإسلام',
+id:'u1', no:1, title:'İslam\'dan Önce Araplar', ar:'حالة العرب قبل الإسلام',
 lead:'İslam şeriatının geldiği toplumun sosyal ve hukuki yapısını, İslam\'ın bu yapıdaki kuralları nasıl kaldırdığını, düzelttiğini veya olduğu gibi bıraktığını öğreneceğiz.',
 html:`
 <h2>1. Coğrafi ve Siyasi Durum</h2>
@@ -94,7 +94,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u2', no:2, src:'İdeal Özet s. 3-4', title:'Şeriat, Fıkıh ve Kanun', ar:'الشريعة والفقه والقانون',
+id:'u2', no:2, title:'Şeriat, Fıkıh ve Kanun', ar:'الشريعة والفقه والقانون',
 lead:'Din, şeriat, fıkıh ve kanun kavramlarını, fıkıh teriminin geçirdiği üç aşamayı, şeriat ile fıkıh arasındaki ilişkiyi ve İslam fıkhının özelliklerini öğreneceğiz.',
 html:`
 <h2>1. Dört Temel Kavram</h2>
@@ -201,14 +201,14 @@ quiz:[
 {q:'Fıkhın muhtar tanımına göre hangisi fıkıh sayılmaz?',o:['Müctehidin hükmü delilinden bilmesi','Mukallidin bir hükmü müftüden öğrenmesi','Kıyasla yeni bir meselenin hükmünü çıkarmak','Ayetten zinanın haramlığını istinbat etmek'],a:1,e:'"İstidlal yoluyla" kaydı mukallidin bilgisini dışarıda bırakır.'},
 {q:'Fıkıh kavramının birinci aşamasında fıkıh ile şeriat arasındaki ilişki nedir?',o:['Şeriat daha geniştir','Fıkıh daha geniştir; içtihadî hükümleri de kapsar','Aynıdır','Hiç kesişmezler'],a:1,e:'İlk aşamada her türlü hüküm bilgisi fıkıhtır; içtihadî hükümler şeriata dahil değilken fıkha dahildir.'},
 {q:'Aşağıdakilerden hangisi vaz\'î hükümdür?',o:['Nedb','Kerâhet','Butlan','İbâha'],a:2,e:'Sıhhat ve butlan vaz\'î, diğerleri teklîfî hükümdür.'},
-{q:'"Fıkıh şeriata dayanır ama icma ve kıyas gibi kaynaklar ancak Kitap ve Sünnet onları meşru saydığı için geçerlidir" ifadesi hangi ilişkiyi anlatır?',o:['Genellik-özellik','Kaynaklık','İlahîlik-beşerîlik','Mürûnet'],a:1,e:'Faruk Yıldız notlarındaki üçlü ayrım: genellik-özellik, kaynaklık, ilahîlik-beşerîlik.'},
+{q:'"Fıkıh şeriata dayanır ama icma ve kıyas gibi kaynaklar ancak Kitap ve Sünnet onları meşru saydığı için geçerlidir" ifadesi hangi ilişkiyi anlatır?',o:['Genellik-özellik','Kaynaklık','İlahîlik-beşerîlik','Mürûnet'],a:1,e:'Üçlü ayrım: genellik-özellik, kaynaklık, ilahîlik-beşerîlik.'},
 {q:'Roma hukuku iddiasına verilen cevaplardan biri hangisidir?',o:['Beyrut hukuk okulu fetih sırasında en parlak dönemindeydi','Fakihler Roma\'dan alsalardı genel sözleşmeler ve borçlar teorisini de alırlardı','İslam\'da evlat edinme Roma\'dan alınmıştır','Şuf\'a Roma hukukundan alınmıştır'],a:1,e:'Ayrıca şuf\'a ve vakfın Roma\'da karşılığı yoktur; Beyrut okulu fetihten önce yıkılmıştı.'},
 {q:'Hangisi İslam şeriatının evrenselliğinin delillerinden biri değildir?',o:['Maslahatı celb, mefsedeti def','Hükümlerin umumi ve kalıcı olması','Mürûnet','Kanunların parlamento tarafından değiştirilebilmesi'],a:3,e:'Beşerî hukukun özelliğidir.'},
 {q:'Mecelle\'ye göre fıkıh nedir?',o:['Kişinin lehine ve aleyhine olanı bilmesi','Mesâil-i şer\'iyye-i ameliyyeyi bilmek','Mükelleflerin bütün fiillerini bilmek','Usul kaidelerini bilmek'],a:1,e:'Ebû Hanîfe ve Şâfiî tanımlarıyla birlikte üç meşhur tanımdan biri.'}
 ]});
 
 UNITS.push({
-id:'u3', no:3, src:'İdeal Özet s. 5', title:'Şer\'î Deliller ve Önceki Şeriatler', ar:'الأدلة الشرعية والشرائع السابقة',
+id:'u3', no:3, title:'Şer\'î Deliller ve Önceki Şeriatler', ar:'الأدلة الشرعية والشرائع السابقة',
 lead:'Şer\'î hükümlerin delillerini (Kitap, Sünnet, İcma, Kıyas ve diğerleri) ve İslam şeriatının önceki semavi şeriatlerle ilişkisini öğreneceğiz.',
 html:`
 <h2>1. Delillerin Tasnifi</h2>
@@ -298,17 +298,17 @@ html:`
 <p class="muted">Kendisiyle çelişen konularda İslam şeriatı öncekileri nesheder; çelişmeyenlerde devamlılık esastır. Bu, yalnız Kur'an ve Sünnet'te nakledilen önceki hükümler için geçerlidir; çünkü mevcut diğer kitaplar orijinal metin değildir.</p>
 `,
 quiz:[
-{q:'İdeal Özet\'e göre aslî kaynaklar hangileridir?',o:['Kitap ve Sünnet','Kitap, Sünnet, İcma','Kitap, Sünnet, İcma, Kıyas','Kitap ve İcma'],a:0,e:'İcma ve kıyas tâbi kaynaklar arasında sayılmıştır.'},
+{q:'Aslî kaynaklar hangileridir?',o:['Kitap ve Sünnet','Kitap, Sünnet, İcma','Kitap, Sünnet, İcma, Kıyas','Kitap ve İcma'],a:0,e:'İcma ve kıyas tâbi kaynaklar arasında sayılmıştır.'},
 {q:'"Boşanmış kadınlar üç kurû\' beklerler" ayetinin delâleti nasıldır?',o:['Kat\'î','Zannî','Mütevâtir','Meşhur'],a:1,e:'"Kurû\'" hem hayız hem temizlik anlamına gelebilir.'},
 {q:'Hanefîlere göre meşhur sünnetin hükmü nedir?',o:['Kesin bilgi, inkârı küfür','Kesine yakın bilgi','Zan','Hükmü yok'],a:1,e:'Mütevâtir kesin bilgi, meşhur kesine yakın bilgi, âhâd zan ifade eder.'},
 {q:'"Varise vasiyet yoktur" hadisi sünnetin Kur\'an\'a göre hangi konumuna örnektir?',o:['Teyit','Tahsis','Nesh','Mücmelin tefsiri'],a:2,e:'Bakara 180\'deki akrabaya vasiyet emrini neshetmiştir.'},
-{q:'Sükûtî icmayı kabul etmeyen mezhepler hangileridir?',o:['Hanefî ve Hanbelî','Şâfiî ve Mâlikî','Hanefî ve Mâlikî','Hanbelî ve Zâhirî'],a:1,e:'Faruk Yıldız usul notları.'},
+{q:'Sükûtî icmayı kabul etmeyen mezhepler hangileridir?',o:['Hanefî ve Hanbelî','Şâfiî ve Mâlikî','Hanefî ve Mâlikî','Hanbelî ve Zâhirî'],a:1,e:'Sükûtî icmayı Şâfiî ve Mâlikîler kabul etmez.'},
 {q:'Kıyasın rükünleri hangi şıkta doğru verilmiştir?',o:['Asıl, fer\', aslın hükmü, illet','Nas, icma, illet, sebep','Asıl, fer\', şart, mâni','Lafız, mana, illet, hüküm'],a:0,e:'Şarap (asıl), diğer içkiler (fer\'), haramlık (hüküm), sarhoş edicilik (illet).'},
-{q:'Cumhura göre önceki şeriatlerden Kur\'an\'da ikrar veya inkâr edilmeden aktarılan hükümlerin durumu nedir?',o:['Bizim için bağlayıcıdır','Bizim için teşri sayılmaz','İcma ile bağlayıcı olur','Mekruhtur'],a:1,e:'İdeal Özet: "Geçmiş şeriatler bizim için bir kanun değildir."'}
+{q:'Cumhura göre önceki şeriatlerden Kur\'an\'da ikrar veya inkâr edilmeden aktarılan hükümlerin durumu nedir?',o:['Bizim için bağlayıcıdır','Bizim için teşri sayılmaz','İcma ile bağlayıcı olur','Mekruhtur'],a:1,e:'Geçmiş şeriatler bizim için bir kanun değildir.'}
 ]});
 
 UNITS.push({
-id:'u4', no:4, src:'İdeal Özet s. 6-8', title:'Fıkhın Evreleri', ar:'أدوار الفقه الإسلامي',
+id:'u4', no:4, title:'Fıkhın Evreleri', ar:'أدوار الفقه الإسلامي',
 lead:'Hz. Peygamber döneminden günümüze fıkhın geçirdiği altı evreyi; her evrenin kaynaklarını, içtihat anlayışını, tedvin durumunu ve öne çıkan eserlerini öğreneceğiz.',
 html:`
 <div class="timeline">
@@ -319,7 +319,7 @@ html:`
 <div><b>5</b><span>Duraklama<br><small>h.350-656</small></span></div>
 <div><b>6</b><span>Metin-Şerh-Haşiye<br><small>h.656-…</small></span></div>
 </div>
-<p class="muted">İdeal Özet'te 4. evre "h.120-350", 5. evre "h.350-606" olarak yazılmıştır. Abbasîlerin kuruluşu 132, Bağdat'ın Moğollarca düşüşü 656/1258'dir.</p>
+<p class="muted">Bazı özetlerde 4. evre "h.120-350", 5. evre "h.350-606" olarak verilir. Abbasîlerin kuruluşu 132, Bağdat'ın Moğollarca düşüşü 656/1258'dir.</p>
 
 <h2>1. Evre: Peygamber Asrı (fıkhın doğuşu)</h2>
 <p>Bu devirde fıkıh yalnız <b>vahiy</b>dir; fıkhın esasları ve kaynakları bu dönemde oluştu. Mekke'de vahiy ağırlıkla akide ve ahlakı (külli ve icmali hükümler: adam öldürme, kız çocuklarını gömme, yetim malı yeme yasağı, iffet, emanet, ahde vefa, suçun şahsîliği), Medine'de amelî hükümleri (zekât, fitre oranları, cezalar gibi nesnel düzenlemeler) içerir.</p>
@@ -413,18 +413,18 @@ html:`
 <p>Mecelle ile başlayan süreçte ansiklopedik ve monografik çalışmalar, akademik tezler, makâsıd eksenli nazariyeler ve kurumsal iftâ kurulları (Din İşleri Yüksek Kurulu, İslam Fıkıh Akademisi) ortaya çıktı.</p>
 `,
 quiz:[
-{q:'Peygamber asrında içtihat için hangisi doğrudur?',o:['Müstakil bir kaynaktı','Vahiyden ayrı, müstakil değildi; ihtilaf yoktu','Sahabe içtihadı onaysız bağlayıcıydı','Kıyas yasaklanmıştı'],a:1,e:'İdeal Özet notu: Bu devirdeki içtihat vahiyden ayrı, müstakil değildi; ihtilaf yoktu.'},
-{q:'İdeal Özet\'te sayılan nesh örneklerinden biri değildir?',o:['Ölüm iddeti','Kabir ziyareti','Kıblenin değişimi','Müellefe-i kulûbun payı'],a:3,e:'Müellefe-i kulûb meselesi Râşid halifeler döneminde illet zail olduğu için hükmün durdurulmasıdır, nesh değildir.'},
+{q:'Peygamber asrında içtihat için hangisi doğrudur?',o:['Müstakil bir kaynaktı','Vahiyden ayrı, müstakil değildi; ihtilaf yoktu','Sahabe içtihadı onaysız bağlayıcıydı','Kıyas yasaklanmıştı'],a:1,e:'Bu devirdeki içtihat vahiyden ayrı, müstakil değildi; ihtilaf yoktu.'},
+{q:'Hangisi nesh örneklerinden biri değildir?',o:['Ölüm iddeti','Kabir ziyareti','Kıblenin değişimi','Müellefe-i kulûbun payı'],a:3,e:'Müellefe-i kulûb meselesi Râşid halifeler döneminde illet zail olduğu için hükmün durdurulmasıdır, nesh değildir.'},
 {q:'Râşid halifeler döneminde hükümler hangi sırayla incelenirdi?',o:['Re\'y, Sünnet, Kitap','Kitap, Sünnet, re\'y','Kitap, icma, kıyas','Sünnet, Kitap, şûra'],a:1,e:'Bulamazlarsa ileri gelenlerle istişare ederlerdi.'},
 {q:'Tâbiîn asrında ihtilafın sebeplerinden biri değildir?',o:['Fakihlerin farklı beldelere dağılması','Şûra ile içtihadın imkânsızlaşması','Farklı örfler','Mezheplerin vakıflarla desteklenmesi'],a:3,e:'Vakıf tahsisi duraklama devrinin taklit sebeplerindendir.'},
 {q:'Bedâiu\'s-sanâi\' kime aittir ve hangi devirde yazılmıştır?',o:['Serahsî – tedvin','Kâsânî – duraklama devri','Nevevî – metin-şerh-haşiye','Merğînânî – tâbiîn'],a:1,e:'Kâsânî (587).'},
 {q:'"Haşiyeyi açıklayan eser"e ne denir?',o:['Şerh','Zeyl','Ta\'lîk ve takrîr','Muhtasar'],a:2,e:'Şerh ibareyi açar, haşiye dışarıdan kaviller getirir, zeyl ektir.'},
-{q:'Duraklama devri âlimlerinin yaptığı faydalı işlerden biri değildir?',o:['Hükümleri illetlendirme','Fürûdan kaide çıkarma','Görüşler arasında tercih','Yeni bir mezhep kurma'],a:3,e:'İdeal Özet\'te sayılan dört iş: ta\'lîl, kaide çıkarma, tercih, mezhebi genişletme.'},
+{q:'Duraklama devri âlimlerinin yaptığı faydalı işlerden biri değildir?',o:['Hükümleri illetlendirme','Fürûdan kaide çıkarma','Görüşler arasında tercih','Yeni bir mezhep kurma'],a:3,e:'Bu devrin dört faydalı işi: ta\'lîl, kaide çıkarma, tercih, mezhebi genişletme.'},
 {q:'Mürşidü\'l-hayrân için hangisi doğrudur?',o:['Osmanlı\'da yürürlüğe girdi','Mısır\'da Kadri Paşa\'nın hazırladığı, yürürlüğe girmeyen Hanefî kodifikasyonudur','Dört mezhebe dayanır','Ceza kanunudur'],a:1,e:'1875, 941 madde.'}
 ]});
 
 UNITS.push({
-id:'u5', no:5, src:'İdeal Özet s. 9-10', title:'Yaşayan Ehl-i Sünnet Mezhepleri', ar:'المذاهب السنية الباقية',
+id:'u5', no:5, title:'Yaşayan Ehl-i Sünnet Mezhepleri', ar:'المذاهب السنية الباقية',
 lead:'Dört Sünnî mezhebin imamlarını, kaynak sıralarını, hocalarını, talebelerini ve tedvin süreçlerini; ayrıca Zeydiyye, Ca\'feriyye ve silinen mezhepleri tanıyacağız.',
 html:`
 <div class="mezhep">
@@ -510,7 +510,7 @@ html:`
 </table>
 `,
 quiz:[
-{q:'İdeal Özet\'e göre Ebû Hanîfe\'nin kaynak sırası hangisidir?',o:['Kitap → Sünnet → İcma → Kıyas','Kitap → Sünnet → Sahabe kavli → İçtihat','Kitap → Sünnet → Medine ameli → Kıyas','Kitap → Sahabe → Sünnet → Kıyas'],a:1,e:'İçtihat hem kıyası hem istihsanı kapsar.'},
+{q:'Ebû Hanîfe\'nin kaynak sırası hangisidir?',o:['Kitap → Sünnet → İcma → Kıyas','Kitap → Sünnet → Sahabe kavli → İçtihat','Kitap → Sünnet → Medine ameli → Kıyas','Kitap → Sahabe → Sünnet → Kıyas'],a:1,e:'İçtihat hem kıyası hem istihsanı kapsar.'},
 {q:'Mezhebi "şûra ile işleyen kolektif bir mezhep" olarak nitelenen imam kimdir?',o:['İmam Mâlik','Ebû Hanîfe','İmam Şâfiî','Ahmed b. Hanbel'],a:1,e:'Malik ise talebeleriyle münakaşa etmez, imlâ ettirirdi.'},
 {q:'Medine halkının uygulamasını haber-i âhâda tercih eden imam kimdir?',o:['Ebû Hanîfe','İmam Mâlik','İmam Şâfiî','Ahmed b. Hanbel'],a:1,e:'Fetva usulünün beşinci maddesi.'},
 {q:'el-Esediyye\'yi yeniden tasnif edip el-Müdevvene\'ye dönüştüren kimdir?',o:['İbn Vehb','Eşheb','Sahnûn','Esed b. Furât'],a:2,e:'Esed eseri İbnü\'l-Kâsım ile hazırlamıştı.'},
@@ -521,7 +521,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u6', no:6, src:'İdeal Özet s. 11', title:'Mülkiyet Teorisi: Malın Tanımı ve Haklar', ar:'نظرية الملكية: تعريف المال',
+id:'u6', no:6, title:'Mülkiyet Teorisi: Malın Tanımı ve Haklar', ar:'نظرية الملكية: تعريف المال',
 lead:'Malın üç tanımını, muhtar tanımdan çıkan sonuçları ve hak ile menfaatlerin mal sayılıp sayılmayacağı tartışmasını sonuçlarıyla birlikte öğreneceğiz.',
 html:`
 <h2>1. Malın Tanımları <span class="ar">المال</span></h2>
@@ -570,7 +570,7 @@ html:`
 </table>
 `,
 quiz:[
-{q:'Hanefîlerin mal tanımı neden eleştirilmiştir?',o:['Menfaati ve yeşillik, ilaç gibi tabiatın istemediği malları kapsamadığı için','Araziyi kapsamadığı için','Parayı kapsamadığı için','Zimmîleri dışladığı için'],a:0,e:'İdeal Özet\'teki not.'},
+{q:'Hanefîlerin mal tanımı neden eleştirilmiştir?',o:['Menfaati ve yeşillik, ilaç gibi tabiatın istemediği malları kapsamadığı için','Araziyi kapsamadığı için','Parayı kapsamadığı için','Zimmîleri dışladığı için'],a:0,e:'Bu tanım menfaatleri ve yeşillik, ilaç gibi tabiatın meyletmediği malları dışarıda bırakır.'},
 {q:'Muhtar tarife göre hangisi maldır?',o:['Güneş ışığı','Bir damla su','Havadaki kuş','Eceliyle ölmüş hayvanın eti'],a:2,e:'Fiilen ihraz edilmemiş ama hiyâzeti mümkün olan şey maldır.'},
 {q:'Hidâne hakkının mal sayılması hakkında hüküm nedir?',o:['İttifakla maldır','İttifakla mal değildir','Hanefîlere göre maldır','Cumhura göre maldır'],a:1,e:'Mal ile ilgisi olmayan haklar ittifakla mal değildir.'},
 {q:'Cumhurun menfaatin mal olduğuna dair delillerinden biri hangisidir?',o:['Menfaat saklanabilir','Şâri menfaati mehir kılmıştır, mehir ise ancak mal olabilir','İcâre kıyasa aykırıdır','Menfaat araz değildir'],a:1,e:'Kur\'an öğretiminin mehir olarak tayin edilmesi.'},

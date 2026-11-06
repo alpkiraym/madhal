@@ -1,6 +1,6 @@
 // ÜNİTELER 7-12
 UNITS.push({
-id:'u7', no:7, src:'İdeal Özet s. 12', title:'Malın Kısımları', ar:'أقسام المال',
+id:'u7', no:7, title:'Malın Kısımları', ar:'أقسام المال',
 lead:'Malı Şâriin korumasına, istikrarına, benzerine, kullanımına ve diğer ölçütlere göre kısımlara ayıracak; her ayrımın doğurduğu fıkhî sonuçları öğreneceğiz.',
 html:`
 <h2>1. Şâriin Korumasına Göre: Mütekavvim – Gayr-ı Mütekavvim</h2>
@@ -74,7 +74,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u8', no:8, src:'İdeal Özet s. 13-15', title:'Mülkiyet ve Milk Çeşitleri', ar:'الملك وأنواعه',
+id:'u8', no:8, title:'Mülkiyet ve Milk Çeşitleri', ar:'الملك وأنواعه',
 lead:'Mülkiyetin tanımını, özel mülkiyete konu olmayan malları, milk-i tam ve milk-i nâkısı, menfaat mülkiyeti ile ibâha farkını ve şahsî yararlanma hakkının hükümlerini öğreneceğiz.',
 html:`
 <h2>1. Mülkiyet <span class="ar">الملك</span></h2>
@@ -145,11 +145,11 @@ quiz:[
 {q:'Menfaati belli süreyle vasiyet edilen evde varislerin mülkiyeti nedir?',o:['Milk-i tam','Rakabe mülkiyeti','İbâha','Şirket-i ibâha'],a:1,e:'Rakabe varislere, menfaat vasiyet edilene geçer; sonunda tam mülkiyete döner.'},
 {q:'Mâlikîlere göre kişinin yalnız kendisinin yararlanabildiği menfaate ne denir?',o:['Milk-i menfaat','Hakku\'l-intifâ\'','Rakabe','İbâha'],a:1,e:'Başkasını da yararlandırabiliyorsa milk-i menfaat denir.'},
 {q:'Düğün yemeğine çağrılan kişinin yemeği yanına alıp götürememesinin sebebi nedir?',o:['Yemek kıyemî maldır','Ona verilen yalnız ibâhadır, temlik değildir','Yemek gayr-ı mütekavvimdir','Şuf\'a hakkı vardır'],a:1,e:'İbâha yararlanma iznidir, devredilemez.'},
-{q:'Şahsî yararlanma hakkında süre dolmadan iptal hangi akitte mümkündür?',o:['İcâre','Vakıf','Vasiyet','İâre'],a:3,e:'İdeal Özet notu: "Sadece iârede süre dolmadan iptal edilebilir."'}
+{q:'Şahsî yararlanma hakkında süre dolmadan iptal hangi akitte mümkündür?',o:['İcâre','Vakıf','Vasiyet','İâre'],a:3,e:'Sadece iârede süre dolmadan iptal edilebilir.'}
 ]});
 
 UNITS.push({
-id:'u9', no:9, src:'İdeal Özet s. 16-17', title:'İrtifak Hakları ve Milk-i Tam', ar:'حقوق الارتفاق والملك التام',
+id:'u9', no:9, title:'İrtifak Hakları ve Milk-i Tam', ar:'حقوق الارتفاق والملك التام',
 lead:'Aynî yararlanma haklarını (şirb, mecra, mesîl, teallî, mürûr, civar), bunları doğuran sebepleri, şahsî intifa hakkından farkını ve milk-i tamın özellik ve sınırlarını öğreneceğiz.',
 html:`
 <h2>1. Aynî Yararlanma Hakkı (Hakku'l-İrtifak) <span class="ar">حق الارتفاق</span></h2>
@@ -217,19 +217,19 @@ html:`
 <li><b>Müdahale ihtimali:</b> Devlet, kamunun menfaati veya bir zararı gidermek için, zararını adilce gidermek şartıyla zorla da olsa mala el koyabilir (istimlak).</li>
 <li><b>Diğerlerinin hakkı:</b> Kişinin malında diğer Müslümanların da hakkı vardır; en bariz örneği zekâttır.</li>
 </ol>
-<p class="muted">Çiftçi notlarında ayrıca: ortak ve komşunun şuf'a ile cebren temellük hakkı; zarar doğuran stokçulukta cebri satış; borcunu ödemeyenin malına cebri icra; zorunlu hallerde fiyat belirleme (narh); mülkiyetin başkasına açıkça zarar verecek şekilde kullanılamaması.</p>
+<p class="muted">Ayrıca: ortak ve komşunun şuf'a ile cebren temellük hakkı; zarar doğuran stokçulukta cebri satış; borcunu ödemeyenin malına cebri icra; zorunlu hallerde fiyat belirleme (narh); mülkiyetin başkasına açıkça zarar verecek şekilde kullanılamaması.</p>
 `,
 quiz:[
 {q:'Özel mülk içindeki kuyu suyunda başkalarının hakkı nedir?',o:['Hem şirb hem şürb hakkı','Şürb (içme) hakkı var, şirb (sulama) hakkı yok','Hiçbir hak yok','Yalnız şirb hakkı'],a:1,e:'Engellenirse içme suyunu zorla alır.'},
 {q:'"الغرم بالغنم" kaidesi irtifak haklarında hangi hükmü açıklar?',o:['Mesîl kanalının bakımından irtifak hakkı sahibinin sorumlu olması','Teallî hakkının satılması','Umumi yolun herkese açık olması','Şuf\'anın komşuya tanınması'],a:0,e:'Nimet külfet karşılığıdır.'},
 {q:'Hanefîlere göre kat çıkma hakkının sabit olması için ne gerekir?',o:['Bedel ödenmesi','Daha önceden bir evin olması','Hâkim kararı','Komşu izni'],a:1,e:'Cumhura göre önceden ev olması gerekmez ve hak bedelle satılabilir.'},
 {q:'Hanefîlerde miras kalan haklardan biri değildir?',o:['İrtifak hakları','Ayıp muhayyerliği','Tayin muhayyerliği','Şart muhayyerliği'],a:3,e:'Şart muhayyerliği Hanefîlere göre muhayyerin ölümüyle sona erer.'},
-{q:'İdeal Özet\'e göre irtifak haklarını doğuran sebeplerden biri değildir?',o:['Umumi ortaklık','İvazlı akitte şart koşulması','Tekâdüm','Gasp'],a:3,e:'Gasp meşru bir mülkiyet veya hak sebebi değildir.'},
+{q:'İrtifak haklarını doğuran sebeplerden biri değildir?',o:['Umumi ortaklık','İvazlı akitte şart koşulması','Tekâdüm','Gasp'],a:3,e:'Gasp meşru bir mülkiyet veya hak sebebi değildir.'},
 {q:'Milk-i tamın sınırlamalarından biri hangisidir?',o:['Süreyle kayıtlı olması','Kişinin malında diğer Müslümanların da hakkının bulunması (zekât)','Kendi malını telef edenin tazmin etmesi','Mirasla geçmemesi'],a:1,e:'Diğer sınırlamalar: meşru edinme, meşru mecra, kamu yararına müdahale.'}
 ]});
 
 UNITS.push({
-id:'u10', no:10, src:'İdeal Özet s. 18-20', title:'Milk-i Tamın Sebepleri: İstîlâ ve Miras', ar:'أسباب الملك التام: الاستيلاء والميراث',
+id:'u10', no:10, title:'Milk-i Tamın Sebepleri: İstîlâ ve Miras', ar:'أسباب الملك التام: الاستيلاء والميراث',
 lead:'Milk-i tamı doğuran dört sebebin özelliklerini; mübah mallar üzerindeki istîlâyı (avlanma, ot ve ağaçlar, maden ve kenz, ölü toprağın ihyası) ve mirası öğreneceğiz.',
 html:`
 <h2>1. Milk-i Tamın Sebepleri ve Özellikleri</h2>
@@ -312,7 +312,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u11', no:11, src:'İdeal Özet s. 21-23', title:'Şuf\'a Hakkı', ar:'الشفعة',
+id:'u11', no:11, title:'Şuf\'a Hakkı', ar:'الشفعة',
 lead:'Şuf\'anın tanımını, meşruiyet delillerini, hangi mallarda sabit olduğunu, sebeplerini ve öncelik sırasını, şartlarını, talep aşamalarını, ödeme şeklini, müşterinin tasarruflarını ve şuf\'ayı düşüren sebepleri öğreneceğiz.',
 html:`
 <h2>1. Tanım ve Terimler</h2>
@@ -390,7 +390,7 @@ quiz:[
 {q:'Şuf\'anın hangi ilkeyle meşru olduğu söylenir?',o:['Akitlerde rıza ilkesi','Zararın giderilmesi (الضرر يزال) ve mefsedetin giderilmesinin önceliği','Ahde vefa','Hiyâzet'],a:1,e:'Rıza ilkesine aykırı olduğu için istihsanen sabittir.'},
 {q:'Bölünemeyen akarlarda şuf\'ayı kabul etmeyen mezhepler hangileridir?',o:['Hanefî ve Hanbelî','Şâfiî ve Ca\'ferî','Mâlikî ve Zâhirî','Hanefî ve Sevrî'],a:1,e:'Hz. Ömer\'in "Kuyuda şuf\'a yoktur" sözü.'},
 {q:'Abdülkerim Zeydan şuf\'anın konusu hakkında hangi görüşü benimser?',o:['Hanefî','Mâlikî','Şâfiî','Zâhirî'],a:3,e:'Zâhirîlere göre bütün akar ve menkullerde şuf\'a vardır.'},
-{q:'Hanefîlere göre halîd (irtifak) ortaklığında öncelik sırası hangisidir?',o:['Mürûr → şirb → mesîl','Şirb → mürûr → mesîl','Mesîl → şirb → mürûr','Şirb → mesîl → mürûr'],a:1,e:'İdeal Özet: Şirb → Mürûr → Mesil.'},
+{q:'Hanefîlere göre halîd (irtifak) ortaklığında öncelik sırası hangisidir?',o:['Mürûr → şirb → mesîl','Şirb → mürûr → mesîl','Mesîl → şirb → mürûr','Şirb → mesîl → mürûr'],a:1,e:'Sıra: Şirb → Mürûr → Mesil.'},
 {q:'Hanefîlere göre şuf\'a talep ettikten sonra vefat eden şuf\'adarın varislerinin hakkı var mıdır?',o:['Vardır','Yoktur','Yalnız erkek varislerin vardır','Hâkim karar verir'],a:1,e:'Cumhura göre vardır.'},
 {q:'Talebü\'l-husûmenin süresi İmam Muhammed ve Züfer\'e göre nedir?',o:['Süre sınırı yoktur','İlk fırsatta','Takrirden sonra bir ay içinde','Üç gün'],a:2,e:'Ebû Hanîfe\'ye göre sınır yok, Ebû Yûsuf\'a göre ilk fırsatta.'},
 {q:'Ebû Hanîfe\'ye göre şuf\'adar müşteriye yapılan indirimden faydalanır mı?',o:['Faydalanır, artıştan etkilenmez','Faydalanmaz','Hem indirim hem artıştan etkilenir','Hâkime bağlıdır'],a:0,e:'Şâfiî ve Hanbelîlere göre ne indirim ne artış etkiler.'},
@@ -398,7 +398,7 @@ quiz:[
 ]});
 
 UNITS.push({
-id:'u12', no:12, src:'İdeal Özet s. 24-25', title:'Akit: Tasarruf, Rükün ve İrade Beyanı', ar:'العقد: التصرف والأركان والصيغة',
+id:'u12', no:12, title:'Akit: Tasarruf, Rükün ve İrade Beyanı', ar:'العقد: التصرف والأركان والصيغة',
 lead:'Tasarrufun çeşitlerini, akdin tanımını ve rüknünü, irade beyan araçlarını, icap ve kabulün şartlarını, iç ve dış irade uyuşmazlıklarını, akit meclisini, akdin konusunu ve taraflarını öğreneceğiz.',
 html:`
 <h2>1. Tasarruf <span class="ar">التصرف</span></h2>
@@ -482,7 +482,7 @@ quiz:[
 {q:'"Dava, ikrar, yemin, kazf" hangi tür sözlü tasarruftur?',o:['Çift taraflı','Bir hakkı inşa veya ıskat eden tek taraflı','Hak inşa veya ıskatına yönelmeyen, Şâriin hüküm bağladığı tek taraflı','Fiilî'],a:2,e:'Vakıf, talak, ibrâ ise hak inşa veya ıskat eden tek taraflı tasarruflardır.'},
 {q:'Cumhura göre akdin rükünleri hangileridir?',o:['Yalnız icap ve kabul','İrade beyanı, akit meclisi, taraflar, akdin konusu','Taraflar ve bedel','İcap, kabul, şahit'],a:1,e:'Hanefîlere göre bunlar icap ve kabulün levâzımıdır.'},
 {q:'Muâtât (teâtî) ile kurulan akdi geçerli saymayan mezhep hangisidir?',o:['Hanefî','Mâlikî','Şâfiî','Hanbelî'],a:2,e:'Hanbelî ve Mâlikîlere göre mutlak olarak geçerlidir (râcih); Zeydîlere göre örfe bağlıdır.'},
-{q:'İdeal Özet\'e göre Hanefîler icap ve kabulün tek kişide toplanmasını hangi işlemlerde kabul etmez?',o:['Nikâh','Malî işlemler','Vekâlet','Vesayet'],a:1,e:'Hanbelîler her akitte, Şâfiî yalnız dedenin torunlarını evlendirmesinde kabul eder.'},
+{q:'Hanefîler icap ve kabulün tek kişide toplanmasını hangi işlemlerde kabul etmez?',o:['Nikâh','Malî işlemler','Vekâlet','Vesayet'],a:1,e:'Hanbelîler her akitte, Şâfiî yalnız dedenin torunlarını evlendirmesinde kabul eder.'},
 {q:'"Bu aracımı sana yirmi bin TL karşılığında hibe ettim" denirse hangi akit kurulur?',o:['Hibe','Satım (karinelerle teyit edilirse)','Âriyet','Akit kurulmaz'],a:1,e:'Belli bir akdin lafzıyla başka akit kastedilmesi halinde kastedilen akit kurulur.'},
 {q:'Hanefîlere göre akit meclisinde taraflara tanınan hak nedir?',o:['Meclis muhayyerliği','Kabul muhayyerliği','Şart muhayyerliği','Görme muhayyerliği'],a:1,e:'Şâfiîlere göre ise hıyâr-ı meclis vardır.'},
 {q:'Mevcut ve memlûk olmayan malların satışını teslim imkânına bakarak caiz gören kimdir?',o:['İmam Şâfiî','İbn Teymiyye','Ebû Hanîfe','İmam Züfer'],a:1,e:'Zeydan da bu görüşü tercih eder.'},

@@ -185,7 +185,7 @@ const EXTRA_MCQ = [
 {u:14,q:'Hanefîlere göre vekilin satım akdinde akdin hukuku (teslim, bedeli isteme) kime döner?',o:['Müvekkile','Vekile','Hâkime','Her ikisine eşit'],a:1,e:'Hüküm müvekkile, hukuk vekile döner; nikâh gibi akitlerde hukuk da müvekkile.'},
 {u:15,q:'Hanefîlere göre ikrahla yapılan satım akdinin hükmü nedir?',o:['Batıl','Fasit; icazetle sahih olur','Nafiz','Lazım'],a:1,e:'Rıza yoktur ama ihtiyar bozulmamışsa akit fasittir; ikrah kalktıktan sonra icazetle sahih olur.'},
 {u:16,q:'Hangisi izafeyi kabul etmeyen (ancak müneccez kurulabilen) akittir?',o:['Vekâlet','İcâre','Hibe','Kefalet'],a:2,e:'Aynın temlikini ifade eden akitler ve nikâh izafeyi kabul etmez.'},
-{u:17,q:'Tayin muhayyerliğini caiz görmeyenler kimlerdir?',o:['Hanefîler','Mâlikîler','Şâfiî, Ahmed b. Hanbel ve Züfer','Ebû Hanîfe ve İmameyn'],a:2,e:'İdeal Özet\'e göre Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer mebîdeki bilinmezlik sebebiyle caiz görmez.'},
+{u:17,q:'Tayin muhayyerliğini caiz görmeyenler kimlerdir?',o:['Hanefîler','Mâlikîler','Şâfiî, Ahmed b. Hanbel ve Züfer','Ebû Hanîfe ve İmameyn'],a:2,e:'Hanefî ve Mâlikîlere göre geçerlidir; Şâfiî, Ahmed ve Züfer mebîdeki bilinmezlik sebebiyle caiz görmez.'},
 {u:18,q:'Şürb haddi Şâfiîlere göre kaç değnektir?',o:['40','60','80','100'],a:0,e:'Cumhura göre 80; Şâfiî 40\'ını had, fazlasını ta\'zîr sayar.'},
 {u:18,q:'Hirâbe suçunu şehir dışında işlenmesi şartıyla kabul edenler kimlerdir?',o:['Şâfiî ve Mâlikî','Ebû Hanîfe ve Ahmed b. Hanbel','Zâhirîler','Ca\'ferîler'],a:1,e:'Diğerlerine göre şehir içinde de işlenebilir.'}
 ];
